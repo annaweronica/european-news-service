@@ -1,0 +1,58 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>European News Service</title>
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="author" content="SitePoint">
+
+  <link rel="stylesheet" href="css/styles.css?v=1.0">
+
+</head>
+
+<body>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+		integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+		integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+	<link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+	<title>News</title>
+</head>
+
+<body>
+	<!--JUMBOTRON-->
+	<div class="jumbotron jumbotron-fluid">
+		<div class="row justify-content-center" id="news-heading">
+			<h1 class="display-10">THE NEWS</h1>
+		</div>
+		<!--BUTTONS DEFINITION FOR COUNTRIES-->
+		<div class="row d-flex justify-content-center" id="buttons_countries_container">
+			<button type="button" id="btn_country_sweden" class="btn_country btn-outline-dark btn-sm" value="se" onclick="set_value()">SVERIGE</button>
+			<button type="button" id="btn_country_poland" class="btn_country btn-outline-dark btn-sm" value="pl" onclick="set_value()">POLSKA</button>
+			<button type="button" id="btn_country_england" class="btn_country btn-outline-dark btn-sm" value="gb" onclick="set_value()">ENGLAND</button>
+		</div>
+	
+	<!--BUTTONS DEFINITION FOR CATEGORIES-->
+	<div class="row justify-content-center">
+        <button type="button" id="btn_category_latest_news" class="btn btn-ghost-dark btn-sm" onclick="news_query('country', '')">LATEST NEWS</button>
+	    <button type="button" id="btn_category_business" class="btn btn-ghost-dark btn-sm" onclick="news_query('country', 'business')">BUSINESS</button>
+        <button type="button" id="btn_category_entertainment" class="btn btn-ghost-dark btn-sm" onclick="news_query('country', 'entertainmate')">ENTERTAINMENT</button>
+        <button type="button" id="btn_category_health" class="btn btn-ghost-dark btn-sm" onclick="news_query('country', 'health')">HEALTH</button>
+        <button type="button" id="btn_category_science" class="btn btn-ghost-dark btn-sm" onclick="news_query('country', 'science')">SCIENCE</button>
+        <button type="button" id="btn_category_sports" class="btn btn-ghost-dark btn-sm" onclick="news_query('country', 'sports')">SPORTS</button>
+        <button type="button" id="btn_category_technology" class="btn btn-ghost-dark btn-sm" onclick="news_query('country', 'technology')">TECHNOLOGY</button>
+    </div>
+</div>
+	<script src="myscript.js"></script>
+</body>
+
+</html>

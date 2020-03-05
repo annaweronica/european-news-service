@@ -1,35 +1,105 @@
-<img src="https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png" style="margin: 0;">
 
-Welcome USER_NAME,
+Title: European News Service
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. You can safely delete this README.md file, or change it for your own project.
+---
 
-## Gitpod Reminders
+Aim:
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+#UX
+Target audience:
 
-`python3 -m http.server`
+Layout:
 
-A blue button should appear to click: *Expose*,
 
-Another blue button should appear to click: *Open Browser*.
+Wireframes:
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
 
-A blue button should appear to click: *Expose*,
+USER STORIES
 
-Another blue button should appear to click: *Open Browser*.
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the backend lessons.
+#Technologies
 
-## Updates Since The Instructional Video
+HTML/HTML5
+CSS/CSS3
+JavaScript
 
-We continually tweak and adjust this template to help give you the best experience. Here are the updates since the original video was made:
+Frameworks:
+Bootstrap
+jQuery
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+External sources imported to the project:
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+BootstrapCDN
+popper.js
+Google fonts
+Font awesome
+Online IDE:
 
---------
+GitPod
+Hosting service:
 
-Happy coding!
+GitHub
+Knowledgeable resources which supported Anna during her work:
+
+www3school
+stackoverflow
+Code Institute lerning materials
+
+
+External code sources implemented and modified:
+
+
+#Testing
+HTML Validator
+
+CSS Validator
+
+
+Manual Testing
+
+Webpage and its responsiveness was tested on follwoing browsers:
+Chrom
+FireFox
+Edge
+Internet Explorer
+
+
+TESTING THE FEATURES
+
+
+#Deployment
+The webpage is hosted on github with one master branch: github.com
+
+git add .
+git commit -m "name"
+git push
+All commends were made as the work incrementation was made progressively and prevented from any code incrementation loss.
+
+GitHub Pages
+
+To deploy a website on GitHub Pages, follow these steps:
+
+Go to Anna's repository
+Click on Settings
+Scrolling down you will find GitHub Pages
+Click on the Source dropdown menu
+Select master branch
+Should appear a green message saying Your site is published at
+To create a local development repository, follow these steps:
+
+Go to Anna's repository
+Click on the Clone or download
+Click the check list icon on the right of the newly opened window to clone the repository using HTTPS
+Open Terminal
+Change the current working directory to the location where you want the cloned directory to be made
+Type git clone and paste the URL you copied in step 3 and run the command
+Credits
+Anna have joined Code Institue to leran as much as she can from she believes best teachers, tutors and mentors and that will give Anna the opportuinity to join IT work environment after the graduation of CI programme.
+
+#Content
+
+
+---
+
+Enjoy!
+
