@@ -1,0 +1,265 @@
+{
+  "status": "ok",
+  "totalResults": 34,
+  "articles": [{
+      "source": {
+        "id": null,
+        "name": "Www.unt.se"
+      },
+      "author": "TT-Reuters",
+      "title": "Harvey Weinstein har lämnat sjukhuset - Upsala Nya Tidning",
+      "description": "",
+      "url": "https://www.unt.se/5529152",
+      "urlToImage": "https://img10.ntm.eu/unt/public/img/5529153/0305213544/harvey-weinstein-har-lamnat-sj?w=980&h=551&mode=crop&scale=both&anchor=topcenter",
+      "publishedAt": "2020-03-05T20:42:32Z",
+      "content": "TT-Reuters\r\n21:34 | 2020-03-05\r\nFilm Harvey Weinstein, som förra veckan dömdes för våldtäkt och sexuellt övergrepp, har lämnat sjukhuset och förts till New York-fängelset Rikers Island.\r\nTanken var att den förre filmproducenten skulle föras till fängelset dir… [+520 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Swedroid.se"
+      },
+      "author": null,
+      "title": "Motorola introducerar Moto G8 – stort batteri och Snapdragon 665 - Swedroid",
+      "description": "Motorola har idag utökat sitt sortiment genom budgetmobilen Moto G8. Telefonen har ett rekommenderat svenskt pris på 1990 kronor. För den summan får kunder en 6,4-tums LCD-skärm (HD+), chippet Qualcomm Snapdragon 665, 4GB RAM, 64GB lagring, minneskortsplats U…",
+      "url": "https://swedroid.se/motorola-introducerar-moto-g8-stort-batteri-och-snapdragon-665/",
+      "urlToImage": "https://cdn771.swedroid.se/wp-content/uploads/2020/03/motorola-moto-g8-top.jpg",
+      "publishedAt": "2020-03-05T20:09:16Z",
+      "content": null
+    },
+    {
+      "source": {
+        "id": "svenska-dagbladet",
+        "name": "Svenska Dagbladet"
+      },
+      "author": "Mårten Schultz",
+      "title": "Mårten Schultz: Inget brott när Jimmie Åkesson (SD) delade ut flygblad i Grekland | Mårten Schultz - Svenska Dagbladet",
+      "description": "KOMMENTAR. En onödig juridisk diskussion om huruvida Jimmie Åkesson gjort sig skyldig till brott, eller inte, när han delade ut flygblad i Grekland har uppkommit.",
+      "url": "https://www.svd.se/en-helt-onodig-juridisk-karusell-inletts",
+      "urlToImage": "https://images.svd.se/v2/images/36843050-84b6-429e-8f0c-e8fbb4fbd08a?h=630&q=80&upscale=true&w=1200&s=9027ad8b76301ee46c80712d21123b36ac30d17b",
+      "publishedAt": "2020-03-05T20:02:55Z",
+      "content": "Sverigedemokraternas partiledare Jimmie Åkesson har åkt till Grekland för att dela ut flygblad med budskapet att Sverige inte kan ta emot fler migranter. Flygbladet undertecknades med The people of Sweden, Sweden democrats.\r\nUtspelet har nu polisanmälts och e… [+132 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Aftonbladet.se"
+      },
+      "author": "TT",
+      "title": "Virus får EU-parlamentet att nobba Strasbourg - Aftonbladet",
+      "description": "EU-parlamentet sammanträde nästa vecka flyttas från Strasbourg i Frankrike till Belgiens huvudstad Bryssel på grund av coronaviruset, efter ett beslut av parlamentets talman David Sassoli.",
+      "url": "https://www.aftonbladet.se/nyheter/a/opG3d0/virus-far-eu-parlamentet-att-nobba-strasbourg",
+      "urlToImage": "https://imgs.aftonbladet-cdn.se/v2/images/8f12eaf0-1e75-4614-adc0-bc87bf61b57d?fit=crop&h=1267&q=50&w=1900&s=8d6144f792384a9f8e48dc445538f5648907859b",
+      "publishedAt": "2020-03-05T19:35:00Z",
+      "content": "avTT\r\nPublicerad: 05 mars 2020 kl. 20.35Uppdaterad: 05 mars 2020 kl. 21.07\r\nFoto: Jean-Francois Badias/AP/TT\r\nEU-parlamentet i Strasbourg. Arkivbild.\r\nEU-parlamentet sammanträde nästa vecka flyttas från Strasbourg i Frankrike till Belgiens huvudstad Bryssel p… [+990 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Www.svt.se"
+      },
+      "author": "https://www.facebook.com/svtnyheter",
+      "title": "94 corona-smittade i Sverige hittills - Sveriges Television",
+      "description": "SVT:s nyhetstjänst med nyheter från hela Sverige och världen inom kultur, sport, opinion och väder.",
+      "url": "https://www.svt.se/nyheter/snabbkollen/94-corona-smittade-i-sverige-hittills",
+      "urlToImage": "https://www.svtstatic.se/resources/svtservice-n-render/og-svt-nyheter_1.png",
+      "publishedAt": "2020-03-05T19:17:08Z",
+      "content": "Hittills har 94 personer smittats av coronaviruset i Sverige. Många\r\nhar kopplingar till varandra. \r\nUnder torsdagen konstaterades\r\nytterligare 28 fall i Region Stockholm. Smittexplosionen i\r\nStockholm kan till stor del kopplas till Italien. Av de 28 smittade… [+179 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Aftonbladet.se"
+      },
+      "author": "Oskar Forsberg",
+      "title": "Smittad 16-åring i Stockholm: ”Blev rädd” - Aftonbladet",
+      "description": "En av de svenskar som är smittad av coronaviruset är en 16-åring i Stockholm. Han hålls nu isolerad i en lägenhet på Kungsholmen, rapporterar Omni. – Jag blev lite rädd såklart men jag är ändå 16 och det är inte farligt för personer i min ålder, säger pojken …",
+      "url": "https://www.aftonbladet.se/nyheter/a/mR4Pm4/smittad-16-aring-blev-lite-radd-saklart",
+      "urlToImage": "https://imgs.aftonbladet-cdn.se/v2/images/4340945b-3635-4a2a-bf51-b46eb15cacd3?fit=crop&h=628&q=50&w=1200&s=f6fea08b1e0de497973bd5e1350b939d495f27d4",
+      "publishedAt": "2020-03-05T17:59:00Z",
+      "content": "avOskar Forsberg\r\nPublicerad: 05 mars 2020 kl. 18.59\r\nEn av de svenskar som är smittad av coronaviruset är en 16-åring i Stockholm.\r\nHan hålls nu isolerad i en lägenhet på Kungsholmen, rapporterar Omni.\r\n Jag blev lite rädd såklart men jag är ändå 16 och det … [+1588 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Aftonbladet.se"
+      },
+      "author": "Emelie Fredriksson",
+      "title": "Topplaceringar för Öberg-systrarna inför tomma läktare - Aftonbladet",
+      "description": "Hanna Öbergs stående skytte stämde inte under VM. I Nove Mesto tvekade hon i över elva sekunder innan hon sänkte den sista pricken.  Inför tomma läktare körde hon i mål som sexa, två placeringar före lillasyster Elvira som slog personbästa.",
+      "url": "https://www.aftonbladet.se/sportbladet/a/Vb3zJV/topplaceringar-for-oberg-systrarna-infor-tomma-laktare",
+      "urlToImage": "https://imgs.aftonbladet-cdn.se/v2/images/a1a58db8-ef72-40c6-8a0b-2311f1981129?fit=crop&h=994&q=50&w=1900&s=b6383ea5140adc4b4fe00b03b0d70d56ca97b561",
+      "publishedAt": "2020-03-05T17:16:00Z",
+      "content": "avEmelie Fredriksson\r\nPublicerad: 05 mars 2020 kl. 18.16Uppdaterad: 05 mars 2020 kl. 19.34\r\nHanna Öbergs stående skytte stämde inte under VM.\r\nI Nove Mesto tvekade hon i över elva sekunder innan hon sänkte den sista pricken. \r\nInför tomma läktare körde hon i … [+1392 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Www.dn.se"
+      },
+      "author": "TT",
+      "title": "Tennis: Dopningsavstängning kan ge svensk Davis Cup-skräll - Dagens Nyheter",
+      "description": "",
+      "url": "https://www.dn.se/sport/dopningsavstangning-kan-ge-svensk-dc-skrall/",
+      "urlToImage": "https://cached-images.bonnier.news/cms30/UploadedImages/2020/3/5/703c77c7-5508-4e8f-ab20-c31e43af47be/bigOriginal.jpg?interpolation=lanczos-none&fit=around%7C1024:576&crop=1024:h;center,top&output-quality=80&output-format=auto",
+      "publishedAt": "2020-03-05T17:15:57Z",
+      "content": "Robin Söderling kan få en pangstart på sin tid som svensk Davis Cup-kapten.\r\nChile kommer till Sverige kraftigt försvagade. 18-rankade världsstjärnan Cristian Garin är ryggskadad och Nicolas Jarry, som är landets näst högst rankade spelare, är avstängd på gru… [+2481 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Expressen.se"
+      },
+      "author": "malin hansson",
+      "title": "Daddy Issues Julia Lyskova – stor intervju - Expressen",
+      "description": "Julia Lyskova är enda delen av duon som utgör podden Daddy Issues. I en intervju med Expressen djupdyker hon i ångest, framgång och att behöva bli vuxen.",
+      "url": "https://www.expressen.se/noje/qs/min-personlighet-ar-javligt-osexig-pa-en-vuxen-manniska/",
+      "urlToImage": "https://y.cdn-expressen.se/images/13/33/13336f5b718d40db9b74c5c8621f6bcd/16x9/1200.jpg",
+      "publishedAt": "2020-03-05T17:03:00Z",
+      "content": "Så där! Som hon, kolla. Så där kommer jag aldrig att se ut?? FAN!\r\nEn ung kvinna med en trendig svart kostym går självsäkert i klackar över Sturegatan på Östermalm i Stockholm. Det välkammade långa mörka håret glänser i den iskalla februarisolen. \r\n En steame… [+19186 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Expressen.se"
+      },
+      "author": "moa lindstedt",
+      "title": "Anne Lundbergs fräcka skämt – i ”Antikrundan” - Expressen",
+      "description": "Anne Lundberg är inte den som är den. När programledaren får syn på ett stort föremål i kön till ”Antikrundan” drar hon ett snuskigt skämt. – Vilket leder till den eviga frågan, har storleken betydelse, säger Anne Lundberg i SVT-programmet.",
+      "url": "https://www.expressen.se/noje/anne-lundbergs-fracka-skamt-i-antikrundan/",
+      "urlToImage": "https://y.cdn-expressen.se/images/d1/9e/d19e86a0d9844df78a01f4a5839ef6a1/16x9/original.jpg",
+      "publishedAt": "2020-03-05T16:47:00Z",
+      "content": "Antikrundan slår läger i Karlsborg i torsdagens avsnitt av SVT-programmet och allt från en antik pistol köpt på Blocket till östeuropeiskt porslin hamnar under lupp.\r\nI synnerhet en 157 centimeter hög kinesisk vas fångar programledaren Anne Lundbergs intresse… [+1250 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Aftonbladet.se"
+      },
+      "author": "Nora Fernstedt, Sara Milstead",
+      "title": "Statsepidemiologen Anders Tegnell: Pågår en mobbningskampanj mot mig - Aftonbladet",
+      "description": "I går publicerades ett klipp där statsepidemiologen Anders Tegnell hostar i händerna under en presskonferens om coronaviruset. Klippet har fått stor uppmärksamhet och spridits av flera kända twittrare. – Det är en del av en hat- och mobbningskampanj mot mig, …",
+      "url": "https://www.aftonbladet.se/nyheter/a/qLdWBz/statsepidemiologen-pagar-en-mobbningskampanj-mot-mig",
+      "urlToImage": "https://imgs.aftonbladet-cdn.se/v2/images/176f2151-ec50-42c9-80b1-19a4f2f4e4b9?fit=crop&h=950&q=50&w=1600&s=4258b8a6b25872034e3332577f7a4f376dc981d0",
+      "publishedAt": "2020-03-05T16:44:00Z",
+      "content": "avNora Fernstedt, Sara Milstead\r\nPublicerad: 05 mars 2020 kl. 17.44Uppdaterad: 05 mars 2020 kl. 20.19\r\nI går publicerades ett klipp där statsepidemiologen Anders Tegnell hostar i händerna under en presskonferens om coronaviruset.\r\nKlippet har fått stor uppmär… [+3160 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Aftonbladet.se"
+      },
+      "author": "Niklas Eriksson, Oskar Forsberg",
+      "title": "Göteborg: Misstänkt mord i lägenhet – död person hittad - Aftonbladet",
+      "description": "Ett misstänkt mord i Göteborg utreds just nu av polisen. En död kvinna hittades i en lägenhet. Kvinnan ska ha blivit huggen med kniv ett flertal gånger, enligt uppgifter till Aftonbladet.",
+      "url": "https://www.aftonbladet.se/nyheter/a/wPQgkP/kvinna-hittad-dod--polisen-misstanker-mord",
+      "urlToImage": "https://imgs.aftonbladet-cdn.se/v2/images/f83ab819-25b7-4474-8372-4935938ce4da?fit=crop&h=1352&q=50&w=1900&s=9acc2aace7659b4526f10d908379b5e9dcc4ccbd",
+      "publishedAt": "2020-03-05T16:27:56Z",
+      "content": null
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Www.di.se"
+      },
+      "author": null,
+      "title": "Folkhälsomyndigheten: Oron får företag att blunda för fakta - Dagens Industri",
+      "description": "SAS beslut att stoppa resor till norra Italien kan vara onödigt om man ser till smittskyddsriskerna, enligt statsepidemiolog Anders Tegnell. \n”Man tvingas ta en del beslut som inte är så välgrundade i fakta”, säger han.",
+      "url": "https://www.di.se/nyheter/folkhalsomyndigheten-oron-far-foretag-att-blunda-for-fakta/",
+      "urlToImage": "https://cached-images.bonnier.news/cms30/UploadedImages/2020/3/5/5aa7fdf2-5dd7-4e25-b593-3843a60b0214/bigOriginal.jpg?interpolation=lanczos-none&crop=16/9xh:1xh;*,*&crop=1xw:9/16xw;*,*&downsize=1340:*&output-quality=60&output-format=jpg",
+      "publishedAt": "2020-03-05T15:45:43Z",
+      "content": "Antalet smittade i Sverige uppgick 60 personer på torsdagseftermiddagen, men arbetet med att isolera och stoppa fortsatt spridning fungerar bra, enligt statsepidemiolog Anders Tegnell på Folkhälsomyndigheten. \r\nSamtidigt kastar virusets framfart stora skuggor… [+2730 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Expressen.se"
+      },
+      "author": "ludvig holmberg",
+      "title": "Ebba Andersson protesterade efter U23-guldet: ”Förlegat” - Expressen",
+      "description": "Sverige tog en sensationell trippel i U23-VM. Efter målgång uppmanades de svenska åkarna att göra ett gemensamt glädjeskutt inför fotograferna på plats. Men Ebba Andersson protesterade. – Jag tycker att det där är förlegat. Jag har aldrig sett en segerbild dä…",
+      "url": "https://www.expressen.se/sport/langdskidor/ebbas-protest-mot-bilden-forlegat/",
+      "urlToImage": "https://z.cdn-expressen.se/images/0a/dd/0add68d07f0b49638cdc8857f44888e0/16x9/original.jpg",
+      "publishedAt": "2020-03-05T15:22:00Z",
+      "content": "Damernas 15 kilometer klassiskt slutade med en stor uppvisning av Sverige.\r\nEbba Andersson drog ifrån alla åkare och säkrade tidigt guldmedaljen. Där bakom spurtade Moa Lundgren hem silvret och Emma Ribom tog bronset.\r\n Det här var häftigt, säger Ebba Anderss… [+3033 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Expressen.se"
+      },
+      "author": "patrik micu",
+      "title": "Klart i dag: 600 kronor i höjda pensioner nästa år - Expressen",
+      "description": "Partierna i Pensionsgruppen kom vid torsdagens möte överens om att höja pensionerna 2021. Förmånen riktas till dem med en allmän pension mellan 9 000–17 000 kronor och uppgår till maximalt 600 kronor per månad.",
+      "url": "https://www.expressen.se/dinapengar/pension/klart-i-dag-600-kronor-i-hojda-pensioner-nasta-ar/",
+      "urlToImage": "https://y.cdn-expressen.se/images/de/b1/deb17725fbfd4cbab0adc86fe7449020/16x9/original.jpg",
+      "publishedAt": "2020-03-05T15:12:00Z",
+      "content": "Som Expressen redan i går berättade var regeringen och socialförsäkringsminister Ardalan Shekarabi (S) beredd att köra över pensionsgruppen för att få till stånd höjningen.\r\nI dag avgjordes striden med en enig pensionsgrupp.\r\nModeraterna och Kristdemokraterna… [+2487 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Expressen.se"
+      },
+      "author": "linnea lindkvist",
+      "title": "Doja Cat gör succé på TikTok med låten ”Say so” - Expressen",
+      "description": "Med över 500 miljoner användare har TikTok blivit en global sensation. Men vem är artisten som dominerar på appen med sin musik just nu? Det har vi svaret på.",
+      "url": "https://www.expressen.se/noje/artisten-som-gor-succe-pa-tiktok-dominerar-appen/",
+      "urlToImage": "https://w.cdn-expressen.se/images/b0/f8/b0f8de2c8fae49a69d1c90522b833bef/16x9/original.jpg",
+      "publishedAt": "2020-03-05T15:00:00Z",
+      "content": "Doja Cat har blivit en populär artist för användarna på appen Tiktok, genom videos och koreografier som personerna kokar ihop och publicerar. \r\nVem är Doja Cat? \r\nDoja Cat, eller Amalaratna Zandile Dlamini som hon egentligen heter, är en amerikansk låtskrivar… [+1225 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Www.dn.se"
+      },
+      "author": "Marijana Dragic",
+      "title": "Anställd på Danderyds sjukhus smittad av nya coronaviruset - Dagens Nyheter",
+      "description": "",
+      "url": "https://www.dn.se/sthlm/medarbetare-pa-danderyds-sjukhus-smittad-av-corona/",
+      "urlToImage": "https://cached-images.bonnier.news/cfcdn-screen9/img/N/b/NbjEnRGS8SA0_PyzQYfpGg_image/image.jpg?interpolation=lanczos-none&fit=around%7C1024:576&crop=1024:h;center,top&output-quality=80&output-format=auto",
+      "publishedAt": "2020-03-05T14:25:07Z",
+      "content": "En medarbetare vid Danderyds sjukhus har smittats av det nya coronaviruset och hålls isolerad, bekräftar kommunikationsdirektör Anna-Karin Stark för DN. \r\nSjukhusmedarbetaren ska smittats under en utrikesresa. Personen ska ha arbetat på dagen, fått symtom sen… [+889 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Mobil.se"
+      },
+      "author": null,
+      "title": "Läsarfråga: Vilken ny telefon ser du mest fram emot? - Mobil",
+      "description": "Trots utebliven mobilmässa är våren fortfarande lanseringssäsong, och de flesta tillverkare har något nytt på gång. Nu frågar vi er vilket telefonsläpp ni ser mest fram emot.",
+      "url": "https://www.mobil.se/nyheter/lasarfraga-vilken-ny-telefon-ser-du-mest-fram-emot",
+      "urlToImage": "https://www.mobil.se/sites/mobil.se/files/styles/retina/public/dsc01785.jpeg?itok=aLuYyYuI",
+      "publishedAt": "2020-03-05T13:27:22Z",
+      "content": "Av de stora tillverkarna är det Samsung som kommit längst, med säljstart för de tre modellerna Galaxy S20, S20 Plus och Galaxy S20 Ultra runt hörnet. Sony har också lanserat sin toppmodell Xperia 1 Mark II men den börjar inte säljas förrän i juni. Xiaomi har … [+813 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Expressen.se"
+      },
+      "author": "kim malmgren, gusten holm",
+      "title": "Markus Isaksson, Jimmy Larsson och Mattias Sandberg mördade - Expressen",
+      "description": "Joakim Durhan lurades till en lägenhet i Kiruna. Där angreps han av Markus Isaksson, Jimmy Larsson och Mattias Sandberg. De slog ihjäl honom – och dumpade kroppen i en myr. I tingsrätten dömdes de för grovt vållande till annans död. Nu skärper hovrätten straf…",
+      "url": "https://www.expressen.se/nyheter/krim/anettes-son-joakim-mordad-av-tre-man/",
+      "urlToImage": "https://y.cdn-expressen.se/images/db/f9/dbf9f1ad45c84d42b3b1f3f69e60a3a4/16x9/original.jpg",
+      "publishedAt": "2020-03-05T13:23:00Z",
+      "content": "Det var i juli 2019 som 29-årige Joakim Durhan försvann spårlöst.\r\nPolisen fattade misstankar om att försvinnandet inte var frivilligt, och man inledde en förundersökning om människorov.\r\nEfter 18 dagar hittades hans kropp svårt bränd och med bakbundna händer… [+4334 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Aftonbladet.se"
+      },
+      "author": "Aftonbladets lokalredaktion",
+      "title": "Ytterligare sju bekräftade fall av corona i Skåne - Aftonbladet",
+      "description": "Fler personer har bekräftats smittade av coronaviruset i Skåne. Senaste dygnet har ytterligare sju personer konstaterats bära på smittan, uppger Region Skåne på torsdagen.",
+      "url": "https://www.aftonbladet.se/nyheter/a/K39Mno/ytterligare-sju-bekraftade-fall-av-corona-i-skane",
+      "urlToImage": "https://imgs.aftonbladet-cdn.se/v2/images/3e0d435f-d910-4f1a-846f-2df8ca267969?fit=crop&h=615&q=50&w=1436&s=32c4a6c99b51ec1f1f7f94203ecf7215237d99b0",
+      "publishedAt": "2020-03-05T12:21:00Z",
+      "content": null
+    }
+  ]
+}

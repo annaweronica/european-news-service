@@ -1,18 +1,3 @@
-<!doctype html>
-
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-
-  <title>European News Service</title>
-  <meta name="description" content="The HTML5 Herald">
-  <meta name="author" content="SitePoint">
-
-  <link rel="stylesheet" href="css/styles.css?v=1.0">
-
-</head>
-
-<body>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -25,7 +10,7 @@
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
 		integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
 	<link rel="stylesheet" href="assets/css/style.css" type="text/css" />
-	<title>News</title>
+	<title>European News Service</title>
 </head>
 
 <body>
@@ -36,22 +21,30 @@
 		</div>
 		<!--BUTTONS DEFINITION FOR COUNTRIES-->
 		<div class="row d-flex justify-content-center" id="buttons_countries_container">
-			<button type="button" id="btn_country_sweden" class="btn_country btn-outline-dark btn-sm" value="se" onclick="set_value()">SVERIGE</button>
-			<button type="button" id="btn_country_poland" class="btn_country btn-outline-dark btn-sm" value="pl" onclick="set_value()">POLSKA</button>
-			<button type="button" id="btn_country_england" class="btn_country btn-outline-dark btn-sm" value="gb" onclick="set_value()">ENGLAND</button>
+			<button type="button" id="btn_country_sweden" class="btn_country btn-outline-dark btn-sm" value="se" onclick="news_query('country', 'se')">SVERIGE</button>
+			<button type="button" id="btn_country_poland" class="btn_country btn-outline-dark btn-sm" value="pl" onclick="news_query('country', 'pl')">POLSKA</button>
+			<button type="button" id="btn_country_england" class="btn_country btn-outline-dark btn-sm" value="gb" onclick="news_query('country', 'gb')">ENGLAND</button>
 		</div>
-	
-	<!--BUTTONS DEFINITION FOR CATEGORIES-->
+
+		<!--BUTTONS DEFINITION FOR CATEGORIES-->
+		<div class="row justify-content-center">
+			<button type="button" id="btn_category_latest_news" class="btn btn-ghost-dark btn-sm" onclick="news_query('','')">LATEST NEWS</button>
+			<button type="button" id="btn_category_business" class="btn btn-ghost-dark btn-sm" onclick="news_query('category', 'business')">BUSINESS</button>
+			<button type="button" id="btn_category_entertainment" class="btn btn-ghost-dark btn-sm" onclick="news_query('category', 'entertainment')">ENTERTAINMENT</button>
+			<button type="button" id="btn_category_health" class="btn btn-ghost-dark btn-sm" onclick="news_query('category', 'health')">HEALTH</button>
+			<button type="button" id="btn_category_science" class="btn btn-ghost-dark btn-sm" onclick="news_query('category', 'science')">SCIENCE</button>
+			<button type="button" id="btn_category_sports" class="btn btn-ghost-dark btn-sm" onclick="news_query('category', 'sports')">SPORTS</button>
+			<button type="button" id="btn_category_technology" class="btn btn-ghost-dark btn-sm" onclick="news_query('category', 'technology')">TECHNOLOGY</button>
+		</div>
+	</div>
 	<div class="row justify-content-center">
-        <button type="button" id="btn_category_latest_news" class="btn btn-ghost-dark btn-sm" onclick="news_query('country', '')">LATEST NEWS</button>
-	    <button type="button" id="btn_category_business" class="btn btn-ghost-dark btn-sm" onclick="news_query('country', 'business')">BUSINESS</button>
-        <button type="button" id="btn_category_entertainment" class="btn btn-ghost-dark btn-sm" onclick="news_query('country', 'entertainmate')">ENTERTAINMENT</button>
-        <button type="button" id="btn_category_health" class="btn btn-ghost-dark btn-sm" onclick="news_query('country', 'health')">HEALTH</button>
-        <button type="button" id="btn_category_science" class="btn btn-ghost-dark btn-sm" onclick="news_query('country', 'science')">SCIENCE</button>
-        <button type="button" id="btn_category_sports" class="btn btn-ghost-dark btn-sm" onclick="news_query('country', 'sports')">SPORTS</button>
-        <button type="button" id="btn_category_technology" class="btn btn-ghost-dark btn-sm" onclick="news_query('country', 'technology')">TECHNOLOGY</button>
-    </div>
-</div>
+		
+			<p>Title</p>
+            <p id="title"></p>
+	
+	</div>
+
+
 	<script src="myscript.js"></script>
 </body>
 
