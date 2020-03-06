@@ -1,6 +1,6 @@
 //Global variables
 
-var country = "";
+var country = "se";
 var category = "";
 var data = '';
 
@@ -30,7 +30,7 @@ function api_call() {
 
             the_result = api_request.responseText;
             data = JSON.parse(the_result);
-            // console.log(data);
+            console.log(data);
             return data;
         };
     };
@@ -45,17 +45,17 @@ function api_call() {
 }
 
 //Getting data to the page
-function display_articles(data) {
-    var title = document.getElementById('');
-    title.innerHTML = data.articles[0];
-}
+// function display_articles(data) {
+//     var title = document.getElementById('');
+//     title.innerHTML = data.articles[0];
+// }
 
 //Main function triggered by buttons 
 function news_query(target, value) {
     set_value(target, value);
     api_call();
-    console.log(data);
-    display_articles(data);
+    // console.log(data);
+    // display_articles(data);
     
 }
 

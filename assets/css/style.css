@@ -1,3 +1,7 @@
+/* @import url('https://fonts.googleapis.com/css?family=Trade+Winds&display=swap'); */
+@import url('https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap');
+@import url('https://fonts.googleapis.com/css?family=PT+Serif&display=swap');
+
 html, body {
   height: 100%;
 }
@@ -10,6 +14,27 @@ body{
     overflow-x: hidden;
     display: flex;
     flex-direction: column;
+    scroll-behavior: smooth;
+}
+
+.jumbotron{
+    background-color: #F2EAD0;
+    border-radius: 10px;
+}
+
+h1{
+    font-family: 'Abril Fatface', cursive;
+    letter-spacing: 10px;
+}
+
+#buttons_countries_container button{
+    font-size: 1.5rem;
+}
+
+#buttons_countries_categories button{
+    font-family: 'PT Serif', serif;
+    font-size: 1rem;
+    letter-spacing: 2px;
 }
 
 p{
