@@ -2,6 +2,10 @@
 @import url('https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap');
 @import url('https://fonts.googleapis.com/css?family=PT+Serif&display=swap');
 
+/* div{
+    border:#303030 solid 2px;
+} */
+
 html, body {
   height: 100%;
 }
@@ -37,7 +41,10 @@ h1{
     letter-spacing: 2px;
 }
 
+aside {
+  display: block;
+}
+
 p{
     color: black;
-    margin: 3rem;
 }

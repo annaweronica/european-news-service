@@ -2,7 +2,7 @@
 
 var country = "se";
 var category = "";
-var data = '';
+var data;
 
 //Creating local storage
 localStorage.setItem("country", country);
@@ -10,7 +10,7 @@ target = localStorage.getItem("country");
 value = localStorage.getItem("category");
 
 //Defining a function setting the variables (country, category) 
-
+//function 1
 function set_value(target, value) {
     if (target == "country") {
         country = value;
@@ -20,9 +20,10 @@ function set_value(target, value) {
     }
     return country, category;
 }
+//ending function 1
 
 //Building the request object and calling API
-
+//function 2
 function api_call() {
     var api_request = new XMLHttpRequest();
     api_request.onreadystatechange = function () {
@@ -30,8 +31,7 @@ function api_call() {
 
             the_result = api_request.responseText;
             data = JSON.parse(the_result);
-            console.log(data);
-            return data;
+            display_articles();
         };
     };
 
@@ -43,20 +43,32 @@ function api_call() {
     api_request.open("GET", url, true);
     api_request.send();
 }
+//ending function 2
 
 //Getting data to the page
-// function display_articles(data) {
-//     var title = document.getElementById('');
-//     title.innerHTML = data.articles[0];
-// }
+function display_articles() {
+    var main_content = document.getElementById('main-content');
+    var html = "";
+    // console.log(data);
+    for (var i = 0; i < data.articles.length; i++) {
+        html += "<div>";
+        html += "<h2>" + data.articles[i].title + "</h2>";
+        html += "<img src=\"" + data.articles[i].urlToImage + "\" alt=\"\" height=\"200\" width=\"350\">";
+        html += "<p>" + data.articles[i].description + "</p>";
+        html += "<a>" + data.articles[i].url + "</a>";
+        html += "<p>" + data.articles[i].publishedAt + "</p>";
+        html += "</div>";
+    }
+    main_content.innerHTML = html;
+
+}
 
 //Main function triggered by buttons 
 function news_query(target, value) {
     set_value(target, value);
     api_call();
     // console.log(data);
-    // display_articles(data);
-    
+    //display_articles();
 }
 
 //STEP 2
@@ -64,3 +76,4 @@ function news_query(target, value) {
 //*define one function setting the variable (country, category) -> set_value()
 //*then define another function making the API call and -> api_call()
 //then third third function calling these two functions -> news_query()
+
