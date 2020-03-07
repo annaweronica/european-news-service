@@ -17,7 +17,7 @@
 	<!--JUMBOTRON-->
 	<div class="jumbotron jumbotron-fluid">
 		<div class="row justify-content-center" id="news-heading">
-			<h1 class="display-10">THE NEWS</h1>
+			<span class="display-10 news-head-title">THE NEWS</span>
 		</div>
 		<!--BUTTONS DEFINITION FOR COUNTRIES-->
 		<div class="row d-flex justify-content-center" id="buttons_countries_container">
@@ -37,6 +37,7 @@
 			<button type="button" id="btn_category_technology" class="btn btn-ghost-dark btn-sm" onclick="news_query('category', 'technology')">TECHNOLOGY</button>
 		</div>
 	</div>
+	<!--CONTENT CONTAINER-->
 	<div class="row justify-content-center">
 		<div class="content-container col-md-10">
 			<!--Aside container for latest news-->
@@ -46,16 +47,15 @@
 				</div>
 			</aside>
 			<!--Main content container-->
-			<div class="col-lg-6 wide-column col" style="background-color: green;">
+			<div class="col-lg-10 wide-column col content-wide">
 				<p>Main content displays here</p>
-                <div id="main-content"> 
-                
-                </div>
-			</div>
+				<div id="main-content">
 
+				</div>
+			</div>
 		</div>
 	</div>
-	</div>
+
 
 
 	<script src="myscript.js"></script>

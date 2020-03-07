@@ -51,9 +51,9 @@ function display_articles() {
     var html = "";
     // console.log(data);
     for (var i = 0; i < data.articles.length; i++) {
-        html += "<div>";
+        html += "<div class=\"content-wide\">";
         html += "<h2>" + data.articles[i].title + "</h2>";
-        html += "<img src=\"" + data.articles[i].urlToImage + "\" alt=\"\" height=\"200\" width=\"350\">";
+        html += "<img src=\"" + data.articles[i].urlToImage + "\" alt=\"news-image\" height=\"\" width=\"\">";
         html += "<p>" + data.articles[i].description + "</p>";
         html += "<a>" + data.articles[i].url + "</a>";
         html += "<p>" + data.articles[i].publishedAt + "</p>";

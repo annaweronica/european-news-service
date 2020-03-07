@@ -15,20 +15,24 @@ body{
     font-family: "Montserrat", sans-serif;
     font-size: 1rem;
     color: 	#303030;
-    overflow-x: hidden;
-    display: flex;
-    flex-direction: column;
+    /* overflow-x: hidden; */
+    /* display: flex; */
+    /* flex-direction: column; */
     scroll-behavior: smooth;
 }
 
 .jumbotron{
     background-color: #F2EAD0;
     border-radius: 10px;
+    padding: 2rem;
 }
 
-h1{
+.news-head-title{
     font-family: 'Abril Fatface', cursive;
-    letter-spacing: 10px;
+    letter-spacing: 15px;
+    /* color: red; */
+    font-size: 3.5rem;
+    display: block;
 }
 
 #buttons_countries_container button{
@@ -41,10 +45,27 @@ h1{
     letter-spacing: 2px;
 }
 
-aside {
-  display: block;
+img{
+    height: 40%;
+    width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-p{
-    color: black;
+.content-wide{
+    background-color: blue;
 }
+
+h2{
+    color: red;
+    font-size: 2rem;
+}
+
+/* aside {
+  display: block;
+} */
+
+/* p{
+    color: black;
+} */
