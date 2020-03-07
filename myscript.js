@@ -10,7 +10,6 @@ target = localStorage.getItem("country");
 value = localStorage.getItem("category");
 
 //Defining a function setting the variables (country, category) 
-//function 1
 function set_value(target, value) {
     if (target == "country") {
         country = value;
@@ -20,10 +19,8 @@ function set_value(target, value) {
     }
     return country, category;
 }
-//ending function 1
 
 //Building the request object and calling API
-//function 2
 function api_call() {
     var api_request = new XMLHttpRequest();
     api_request.onreadystatechange = function () {
@@ -43,7 +40,6 @@ function api_call() {
     api_request.open("GET", url, true);
     api_request.send();
 }
-//ending function 2
 
 //Getting data to the page
 function display_articles() {
@@ -52,9 +48,10 @@ function display_articles() {
     // console.log(data);
     for (var i = 0; i < data.articles.length; i++) {
         html += "<div class=\"content-wide\">";
+        html +="<a target=\"_blank\" href='" + data.articles[i].url + "' >";
         html += "<h2>" + data.articles[i].title + "</h2>";
-        html +="<a target=\"_blank\" href='" + data.articles[i].url + "' </a>"
         html += "<img src=\"" + data.articles[i].urlToImage + "\" alt=\"news-image\" height=\"\" width=\"\">";
+        html +="</a>";
         html += "<p>" + data.articles[i].description + "</p>";
         html += "<p>" + data.articles[i].publishedAt + "</p>";
         html += "</div>";
@@ -70,10 +67,3 @@ function news_query(target, value) {
     // console.log(data);
     //display_articles();
 }
-
-//STEP 2
-//defining the function that we are set the var & making the API call:
-//*define one function setting the variable (country, category) -> set_value()
-//*then define another function making the API call and -> api_call()
-//then third third function calling these two functions -> news_query()
-
