@@ -53,7 +53,7 @@ function display_articles() {
         html += "<img src=\"" + data.articles[i].urlToImage + "\" alt=\"news-image\" height=\"\" width=\"\">";
         html +="</a>";
         html += "<p>" + data.articles[i].description + "</p>";
-        html += "<p>" + data.articles[i].publishedAt + "</p>";
+        // html += "<p>" + data.articles[i].publishedAt + "</p>";
         html += "</div>";
     }
     main_content.innerHTML = html;
@@ -66,4 +66,17 @@ function news_query(target, value) {
     api_call();
     // console.log(data);
     //display_articles();
+}
+
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
 }

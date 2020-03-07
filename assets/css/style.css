@@ -2,9 +2,9 @@
 @import url('https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap');
 @import url('https://fonts.googleapis.com/css?family=PT+Serif&display=swap');
 
-/* div{
+div{
     border:#303030 solid 2px;
-} */
+}
 
 html, body {
   height: 100%;
@@ -15,16 +15,30 @@ body{
     font-family: "Montserrat", sans-serif;
     font-size: 1rem;
     color: 	#303030;
-    /* overflow-x: hidden; */
-    /* display: flex; */
-    /* flex-direction: column; */
+    overflow-x: hidden; 
+    display: flex;
+    flex-direction: column;
     scroll-behavior: smooth;
+    margin: 0;
 }
 
-.jumbotron{
+.header{
     background-color: #F2EAD0;
     border-radius: 10px;
     padding: 2rem;
+    /* position: relative; */
+    margin-bottom: 1rem;
+    top: 0;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 102px;
 }
 
 .news-head-title{
@@ -45,14 +59,19 @@ body{
     letter-spacing: 2px;
 }
 
+.narrow-column-content{
+    background-color: #F4F7F4;
+}
+
 img{
     max-width: 100%;
     height: auto;
     display: block;
-    /* margin-left: auto; */
-    /* margin-right: auto; */
+    margin-left: auto;
+    margin-right: auto;
     border-radius: 10px;
     align-self: center;
+    background-size: contain;
 }
 
 /* img:hover{
@@ -62,10 +81,19 @@ img{
 .content-wide{
     background-color: #F2EAD0;
     border-radius: 10px;
+    float: center;
 }
 
 h2{
-    font-size: 2rem;
+    text-decoration: none!important;
+    color: #303030!important;
+}
+
+h2:hover{
+    text-decoration:  none!important;
+    background-color: greenyellow;
+    color: red;
+ 
 }
 
 /* aside {
