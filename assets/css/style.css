@@ -46,19 +46,24 @@ body{
 }
 
 img{
-    height: 40%;
-    width: 50%;
-    display: block;
-    margin-left: auto;
+    max-width: 100%;
+    height: auto;
+    /* display: block; */
+    /* margin-left: auto; */
     margin-right: auto;
+    border-radius: 10px;
 }
 
+/* img:hover{
+    opacity: 1.0;
+} */
+
 .content-wide{
-    background-color: blue;
+    background-color: #F2EAD0;
+    border-radius: 10px;
 }
 
 h2{
-    color: red;
     font-size: 2rem;
 }
 

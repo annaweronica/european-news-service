@@ -53,9 +53,9 @@ function display_articles() {
     for (var i = 0; i < data.articles.length; i++) {
         html += "<div class=\"content-wide\">";
         html += "<h2>" + data.articles[i].title + "</h2>";
+        html +="<a target=\"_blank\" href='" + data.articles[i].url + "' </a>"
         html += "<img src=\"" + data.articles[i].urlToImage + "\" alt=\"news-image\" height=\"\" width=\"\">";
         html += "<p>" + data.articles[i].description + "</p>";
-        html += "<a>" + data.articles[i].url + "</a>";
         html += "<p>" + data.articles[i].publishedAt + "</p>";
         html += "</div>";
     }
