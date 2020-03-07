@@ -1,11 +1,6 @@
-/* @import url('https://fonts.googleapis.com/css?family=Trade+Winds&display=swap'); */
 @import url('https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap');
 @import url('https://fonts.googleapis.com/css?family=PT+Serif&display=swap');
-
-/* div{
-    border:#303030 solid 2px;
-} */
-
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display&display=swap');
 html, body {
   height: 100%;
     scroll-behavior: smooth;
@@ -23,7 +18,8 @@ body{
 }
 
 .header{
-    background-color: #D9C49C;
+    background-color: #ead6c7;
+     /* #dabda5; */
     border-radius: 10px;
     padding-bottom: 1rem;
     margin-bottom: 1rem;
@@ -72,7 +68,7 @@ a button:hover, a:visited, a:link, a:active {
     background-color: #F4F7F4;
 } */
 
-img{
+a img{
     max-width: 100%;
     height: auto;
     display: block;
@@ -83,9 +79,9 @@ img{
     background-size: contain;
 }
 
-/* img:hover{
-    opacity: 1.0;
-} */
+a img:hover{
+    opacity: 0.7;
+}
 
 .content-wide{
     /* background-color: #F2EAD0; */
@@ -99,11 +95,15 @@ a:hover, a:visited, a:link, a:active {
 
 a h1{
     color: #303030;
-    font-family: 'PT Serif', serif;
+    font-family: 'Playfair Display', serif;
+    text-transform: uppercase;
 }
 
 a h1:hover{
     text-decoration: none;
     color: grey;
- 
+}
+
+#description{
+    font-size: 1.5rem;
 }

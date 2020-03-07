@@ -1,6 +1,6 @@
 //Global variables
 
-var country = "se";
+var country = "";
 var category = "";
 var data;
 
@@ -45,20 +45,26 @@ function api_call() {
 function display_articles() {
     var main_content = document.getElementById('main-content');
     var html = "";
+    var noDescription = "";
     // console.log(data);
     for (var i = 0; i < data.articles.length; i++) {
         html += "<article class=\"content-wide\">";
-        html +="<a target=\"_blank\" href='" + data.articles[i].url + "' >";
+        html += "<a target=\"_blank\" href='" + data.articles[i].url + "' >";
         html += "<h1>" + data.articles[i].title + "</h1>";
         html += "<img src=\"" + data.articles[i].urlToImage + "\" alt=\"news-image\" height=\"\" width=\"\">";
-        html +="</a>";
-        html += "<figcaption>" + data.articles[i].description + "</figcaption>";
-        // html += "<p>" + data.articles[i].publishedAt + "</p>";
+        html += "</a>";
+        if (data.articles[i].description == null) {
+            noDescription = "No description";
+            console.log(noDescription);
+        } else {
+            noDescription = data.articles[i].description;
+            console.log(noDescription);
+        }
+        html += "<figcaption>" + noDescription + "</figcaption>";
         html += "<hr>"
         html += "</article>";
     }
     main_content.innerHTML = html;
-
 }
 
 //Main function triggered by buttons 
