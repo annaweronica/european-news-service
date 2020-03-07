@@ -36,7 +36,7 @@ function api_call() {
     query = "?country=" + country + "&category=" + category;
     key = "&apiKey=5ff4a72e528b4f319854a4f14a2b0c9c";
     url = endpoint + query + key;
-    // console.log(url);
+    console.log(url);
     api_request.open("GET", url, true);
     api_request.send();
 }
@@ -55,17 +55,21 @@ function display_articles() {
         html += "</a>";
         if (data.articles[i].description == null) {
             noDescription = "No description";
-            console.log(noDescription);
         } else {
             noDescription = data.articles[i].description;
-            console.log(noDescription);
         }
         html += "<figcaption>" + noDescription + "</figcaption>";
         html += "<hr>"
         html += "</article>";
     }
     main_content.innerHTML = html;
-}
+    }
+
+function latestNews(target, value){
+    set_value("category", "");
+    set_value(target, value);
+    api_call();
+};
 
 //Main function triggered by buttons 
 function news_query(target, value) {
