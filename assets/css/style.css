@@ -24,8 +24,9 @@ body{
 
 .header{
     background-color: #F2EAD0;
-    /* border-radius: 10px; */
-    padding: 2rem;
+    border-radius: 10px;
+    padding-bottom: 1rem;
+    margin: 1rem;
     /* position: relative; */
     top: 0;
     z-index: 10;
@@ -44,7 +45,7 @@ body{
 .news-head-title{
     font-family: 'Abril Fatface', cursive;
     letter-spacing: 15px;
-    font-size: 3.5rem;
+    font-size: 3rem;
     display: block;
 }
 
@@ -52,10 +53,19 @@ body{
     font-size: 1.5rem;
 }
 
+a button:hover, a:visited, a:link, a:active {
+    text-decoration:  none;
+}
+
+
 #buttons_countries_categories button{
     font-family: 'PT Serif', serif;
     font-size: 1rem;
     letter-spacing: 2px;
+}
+
+#buttons_countries_categories button:hover{
+    color: grey;
 }
 
 /* .narrow-column-content{
@@ -87,12 +97,13 @@ a:hover, a:visited, a:link, a:active {
     text-decoration:  none;
 }
 
-a h2{
+a h1{
     color: #303030;
+    font-family: 'PT Serif', serif;
 }
 
-a h2:hover{
-    background-color: greenyellow;
-    color: red;
+a h1:hover{
+    text-decoration: none;
+    color: grey;
  
 }

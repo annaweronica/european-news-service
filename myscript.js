@@ -47,14 +47,15 @@ function display_articles() {
     var html = "";
     // console.log(data);
     for (var i = 0; i < data.articles.length; i++) {
-        html += "<div class=\"content-wide\">";
+        html += "<article class=\"content-wide\">";
         html +="<a target=\"_blank\" href='" + data.articles[i].url + "' >";
-        html += "<h2>" + data.articles[i].title + "</h2>";
+        html += "<h1>" + data.articles[i].title + "</h1>";
         html += "<img src=\"" + data.articles[i].urlToImage + "\" alt=\"news-image\" height=\"\" width=\"\">";
         html +="</a>";
-        html += "<p>" + data.articles[i].description + "</p>";
+        html += "<figcaption>" + data.articles[i].description + "</figcaption>";
         // html += "<p>" + data.articles[i].publishedAt + "</p>";
-        html += "</div>";
+        html += "<hr>"
+        html += "</article>";
     }
     main_content.innerHTML = html;
 
@@ -68,15 +69,15 @@ function news_query(target, value) {
     //display_articles();
 }
 
-window.onscroll = function() {myFunction()};
+// window.onscroll = function() {myFunction()};
 
-var header = document.getElementById("myHeader");
-var sticky = header.offsetTop;
+// var header = document.getElementById("myHeader");
+// var sticky = header.offsetTop;
 
-function myFunction() {
-  if (window.pageYOffset > sticky) {
-    header.classList.add("sticky");
-  } else {
-    header.classList.remove("sticky");
-  }
-}
+// function myFunction() {
+//   if (window.pageYOffset > sticky) {
+//     header.classList.add("sticky");
+//   } else {
+//     header.classList.remove("sticky");
+//   }
+// }
