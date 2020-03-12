@@ -19,6 +19,7 @@
 		<div class="header" id="myHeader">
 			<div class="row justify-content-center" id="news-heading">
 				<span class="display-8 news-head-title">THE NEWS</span>
+				<div id="openweathermap-widget-13">WIDGET</div>
 			</div>
 			<!--BUTTONS DEFINITION FOR COUNTRIES-->
 			<div class="row d-flex justify-content-center" id="buttons_countries_container">
@@ -59,8 +60,20 @@
 
 	<script src="myscript.js"></script>
 	<script>
-        news_query('country', 'se')
+		news_query('country', 'se')
 	</script>
+	<!-- <script>
+		window.myWidgetParam ? window.myWidgetParam : window.myWidgetParam = [];  
+        window.myWidgetParam.push({id: 13,cityid: '2643743',appid: 'c35fc6de6d76e7eef96c6606b320ee78',units: 'metric',containerid: 'openweathermap-widget-13',  });  
+        (function() {
+	        var script = document.createElement('script');
+	        script.async = true;
+	        script.charset = "utf-8";
+	        script.src = "//openweathermap.org/themes/openweathermap/assets/vendor/owm/js/weather-widget-generator.js";
+	        var s = document.getElementsByTagName('script')[0];
+	        s.parentNode.insertBefore(script, s);
+        })();
+	</script> -->
 </body>
 
 </html>

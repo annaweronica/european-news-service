@@ -7,8 +7,8 @@ var data;
 
 //Creating local storage
 localStorage.setItem("country", country);
-target = localStorage.getItem("country");
-value = localStorage.getItem("category");
+var target = localStorage.getItem("country");
+var value = localStorage.getItem("category");
 
 //Defining a function setting the variables (country, category) 
 function set_value(target, value) {
@@ -65,7 +65,7 @@ function api_call_weather() {
 
             the_result_weather = api_request_weather.responseText;
             data = JSON.parse(the_result_weather);
-            // display_weather();
+            display_weather();
         }
     };
 
@@ -103,7 +103,14 @@ function display_articles() {
     }
 
 function display_weather() {
-    var weather
+    window.myWidgetParam ? window.myWidgetParam : window.myWidgetParam = [];  
+    window.myWidgetParam.push({id: 13,cityid: '2643743',appid: 'c35fc6de6d76e7eef96c6606b320ee78',units: 'metric',containerid: 'openweathermap-widget-13',  });  
+    var script = document.createElement('openweathermap-widget-13');
+	script.async = true;
+	script.charset = "utf-8";
+	script.src = "//openweathermap.org/themes/openweathermap/assets/vendor/owm/js/weather-widget-generator.js";
+	var s = document.getElementsByTagName('openweathermap-widget-13')[0];
+	s.parentNode.insertBefore(script, s);
 }
 
 function latestNews(target, value){
