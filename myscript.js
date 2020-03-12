@@ -29,7 +29,7 @@ function api_call() {
             the_result = api_request.responseText;
             data = JSON.parse(the_result);
             display_articles();
-        };
+        }
     };
 
     endpoint = "https://newsapi.org/v2/top-headlines";
@@ -54,12 +54,12 @@ function display_articles() {
         html += "<img src=\"" + data.articles[i].urlToImage + "\" alt=\"news-image\" height=\"\" width=\"\">";
         html += "</a>";
         if (data.articles[i].description == null) {
-            noDescription = "No description";
+            noDescription = "No description.";
         } else {
             noDescription = data.articles[i].description;
         }
         html += "<figcaption>" + noDescription + "</figcaption>";
-        html += "<hr>"
+        html += "<hr>";
         html += "</article>";
     }
     main_content.innerHTML = html;
@@ -69,7 +69,7 @@ function latestNews(target, value){
     set_value("category", "");
     set_value(target, value);
     api_call();
-};
+}
 
 //Main function triggered by buttons 
 function news_query(target, value) {
@@ -93,11 +93,10 @@ function news_query(target, value) {
 // }
 
 //JUMP TO THE TOP BUTTON 
-//Get the button:
 mybutton = document.getElementById("myBtn");
 
 // When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
+window.onscroll = function() {scrollFunction();};
 
 function scrollFunction() {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {

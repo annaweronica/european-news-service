@@ -32,10 +32,6 @@ body{
   width: 100%;
 }
 
-/* .sticky + .content {
-  padding-top: 102px;
-} */
-
 .news-head-title{
     font-family: 'Abril Fatface', cursive;
     letter-spacing: 15px;
@@ -50,7 +46,6 @@ body{
 a button:hover, a:visited, a:link, a:active {
     text-decoration:  none;
 }
-
 
 #buttons_countries_categories button{
     font-family: 'PT Serif', serif;
@@ -68,13 +63,13 @@ a button:hover, a:visited, a:link, a:active {
 
 a img{
     max-width: 100%;
-    height: auto;
+    height: 20rem;
     display: block;
     margin-left: auto;
     margin-right: auto;
     border-radius: 10px;
     align-self: center;
-    background-size: contain;
+    object-fit: fill;
 }
 
 a img:hover{
@@ -94,7 +89,7 @@ a:hover, a:visited, a:link, a:active {
 a h1{
     color: #303030;
     font-family: 'Playfair Display', serif;
-    text-transform: uppercase;
+    font-size: 1.5rem;
 }
 
 a h1:hover{
@@ -106,13 +101,15 @@ a h1:hover{
     font-size: 1.5rem;
 }
 
+/* ---------------------------------------------GO UP BUTTON */
+
 #myBtn {
   display: none; /* Hidden by default */
   position: fixed; /* Fixed/sticky position */
   bottom: 3rem; /* Place the button at the bottom of the page */
   right: 3rem; /* Place the button 30px from the right */
   z-index: 99; /* Make sure it does not overlap */
-  border: 1px solid; /* Remove borders */
+  border: 1px solid; /*Remove borders */
   outline: none; /* Remove outline */
   background-color: #b7a295; /* Set a background color */
   color: #303030; /* Text color */
