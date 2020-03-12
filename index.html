@@ -39,34 +39,27 @@
 			</div>
 		</div>
 		<!--CONTENT CONTAINER-->
-        <div class="container-fluid">
-		<div class="teaser-wrapper row content-container justify-content-center">
-			<!--Aside container for latest news-->
-			<!-- <aside class="narrow-column"> -->
-			<!-- <div class="col-lg-4 narrow-column-content">
-				<p>The latest news display here</p>
-			</div> -->
-			<!-- </aside> -->
-			<!--Main content container-->
-			<article class="col-lg-6 wide-column col content-wide">
-				<div id="main-content">
-					<h1></h1>
-					<img>
-					<figcaption id="description"></figcaption>
-					<hr>
-				</div>
-			</article>
+		<div class="container-fluid">
+			<div class="teaser-wrapper row content-container justify-content-center">
+				<article class="col-lg-6 wide-column col content-wide">
+					<div id="main-content">
+						<h1></h1>
+						<img>
+						<figcaption id="description"></figcaption>
+						<hr>
+					</div>
+				</article>
+			</div>
 		</div>
-        </div>
-
+		<!--GO UP BUTTON-->
 		<div>
-			<button onclick="topFunction()" id="myBtn" title="Go up">Go up</button>
+			<button onclick="topFunction()" id="myBtn" title="Go up"><img src="assets/icons/go_top.png" atr="icon go top" height="32px" width="38px"></button>
 		</div>
 	</div>
 
 	<script src="myscript.js"></script>
 	<script>
-		news_query('country', 'se')
+        news_query('country', 'se')
 	</script>
 </body>
 

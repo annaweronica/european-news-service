@@ -2,6 +2,7 @@
 
 var country = "";
 var category = "";
+var city = "";
 var data;
 
 //Creating local storage
@@ -20,6 +21,20 @@ function set_value(target, value) {
     return country, category;
 }
 
+function set_city(){
+    if (country == "se"){
+        city = "stockholm";
+    }
+    if (country == "pl"){
+        city = "gdansk";
+    }
+    if (country == "gb"){
+        city = "london";
+    }
+    console.log(city);
+    return city;
+}
+
 //Building the request object and calling API
 function api_call() {
     var api_request = new XMLHttpRequest();
@@ -36,12 +51,34 @@ function api_call() {
     query = "?country=" + country + "&category=" + category;
     key = "&apiKey=5ff4a72e528b4f319854a4f14a2b0c9c";
     url = endpoint + query + key;
-    console.log(url);
+    // console.log(url);
     api_request.open("GET", url, true);
     api_request.send();
 }
 
-//Getting data to the page
+//WEAHTER API
+
+function api_call_weather() {
+    var api_request_weather = new XMLHttpRequest();
+    api_request_weather.onreadystatechange = function () {
+        if (this.readyState == 4 && this.status == 200) {
+
+            the_result_weather = api_request_weather.responseText;
+            data = JSON.parse(the_result_weather);
+            // display_weather();
+        }
+    };
+
+    endpoint = "https://api.openweathermap.org/data/2.5/weather";
+    query = "?q=" + city;
+    key = "&appid=c35fc6de6d76e7eef96c6606b320ee78";
+    url = endpoint + query + key;
+    console.log(url);
+    api_request_weather.open("GET", url, true);
+    api_request_weather.send();
+}
+
+//Getting news data to the page
 function display_articles() {
     var main_content = document.getElementById('main-content');
     var html = "";
@@ -65,6 +102,10 @@ function display_articles() {
     main_content.innerHTML = html;
     }
 
+function display_weather() {
+    var weather
+}
+
 function latestNews(target, value){
     set_value("category", "");
     set_value(target, value);
@@ -74,23 +115,12 @@ function latestNews(target, value){
 //Main function triggered by buttons 
 function news_query(target, value) {
     set_value(target, value);
+    set_city();
     api_call();
+    api_call_weather();
     // console.log(data);
     //display_articles();
 }
-
-// window.onscroll = function() {myFunction()};
-
-// var header = document.getElementById("myHeader");
-// var sticky = header.offsetTop;
-
-// function myFunction() {
-//   if (window.pageYOffset > sticky) {
-//     header.classList.add("sticky");
-//   } else {
-//     header.classList.remove("sticky");
-//   }
-// }
 
 //JUMP TO THE TOP BUTTON 
 mybutton = document.getElementById("myBtn");
