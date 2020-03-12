@@ -18,12 +18,10 @@ body{
 }
 
 .header{
-    background-color: #ead6c7;
-     /* #dabda5; */
+    background-color: #e7dfdb;
     border-radius: 10px;
     padding-bottom: 1rem;
     margin-bottom: 1rem;
-    /* position: relative; */
     top: 0;
     z-index: 10;
 }
