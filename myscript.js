@@ -1,5 +1,4 @@
 //Global variables
-
 var country = "";
 var category = "";
 var city = "";
@@ -35,7 +34,7 @@ function set_city(){
     return city;
 }
 
-//Building the request object and calling API
+//Building the request object and calling news API
 function api_call() {
     var api_request = new XMLHttpRequest();
     api_request.onreadystatechange = function () {
@@ -57,7 +56,6 @@ function api_call() {
 }
 
 //WEAHTER API
-
 function api_call_weather() {
     var api_request_weather = new XMLHttpRequest();
     api_request_weather.onreadystatechange = function () {
@@ -129,10 +127,10 @@ function news_query(target, value) {
     //display_articles();
 }
 
-//JUMP TO THE TOP BUTTON 
+//JUMP TO THE TOP BUTTON & SHRINKING HEADER
 mybutton = document.getElementById("myBtn");
-
 // When the user scrolls down 20px from the top of the document, show the button
+// When the user scrolls down 50px from the top of the document, resize the header's font size
 window.onscroll = function() {scrollFunction();};
 
 function scrollFunction() {
@@ -141,8 +139,12 @@ function scrollFunction() {
   } else {
     mybutton.style.display = "none";
   }
+   if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+    document.getElementById("header").style.fontSize = "30px";
+  } else {
+    document.getElementById("header").style.fontSize = "90px";
+  }
 }
-
 // When the user clicks on the button, scroll to the top of the document
 function topFunction() {
   document.body.scrollTop = 0; // For Safari
