@@ -20,11 +20,11 @@
 			<div class="col-lg-12" id="header">
 				<div class="row justify-content-center" id="news-heading">
 					<div class="display-8 news-head-title">THE NEWS</div>
-					<div id="openweathermap-widget-13">WIDGET</div>
+					<!--<div id="openweathermap-widget-13">WIDGET</div>-->
 				</div>
 				<!--BUTTONS DEFINITION FOR COUNTRIES-->
 				<div class="row d-flex justify-content-center" id="buttons_countries_container">
-					<button type="button" id="btn_country_sweden" class="btn btn-ghost btn-sm" value="se" onclick="news_query('country', 'se')"><img src="assets/flags/sweden.png" height="30px" width="30px"></button>
+					<button type="button" id="btn_country_sweden" class="btn btn-ghost btn-sm flag" value="se" onclick="news_query('country', 'se')"><img src="assets/flags/sweden.png" height="30px" width="30px"></button>
 					<button type="button" id="btn_country_poland" class="btn btn-ghost btn-sm" value="pl" onclick="news_query('country', 'pl')"><img src="assets/flags/poland.png" height="30px" width="30px"></button>
 					<button type="button" id="btn_country_england" class="btn btn-ghost btn-sm" value="gb" onclick="news_query('country', 'gb')"><img src="assets/flags/england.png" height="30px" width="30px"></button>
 				</div>
@@ -46,10 +46,10 @@
 			<div class="teaser-wrapper row content-container justify-content-center">
 				<article class="col-lg-6 wide-column col content-wide">
 					<div id="main-content">
-						<h1></h1>
+						<!--<h1></h1>
 						<img>
 						<figcaption id="description"></figcaption>
-						<hr>
+						<hr>-->
 					</div>
 				</article>
 			</div>
@@ -65,24 +65,6 @@
 	<script>
 		news_query('country', 'se')
 	</script>
-	<!--<script>
-        window.myWidgetParam ? window.myWidgetParam : window.myWidgetParam = [];
-        window.myWidgetParam.push({
-            id: 13,
-            cityid: '2643743',
-            appid: 'c35fc6de6d76e7eef96c6606b320ee78',
-            units: 'metric',
-            containerid: 'openweathermap-widget-13',
-        });
-        (function() {
-            var script = document.createElement('script');
-            script.async = true;
-            script.charset = "utf-8";
-            script.src = "//openweathermap.org/themes/openweathermap/assets/vendor/owm/js/weather-widget-generator.js";
-            var s = document.getElementsByTagName('script')[0];
-            s.parentNode.insertBefore(script, s);
-        })();
-    </script>-->
 </body>
 
 </html>

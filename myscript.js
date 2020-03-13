@@ -2,7 +2,7 @@
 var country = "";
 var category = "";
 var city = "";
-var data;
+//var data;
 
 //Creating local storage
 localStorage.setItem("country", country);
@@ -40,13 +40,13 @@ function api_call() {
     api_request.onreadystatechange = function () {
         if (this.readyState == 4 && this.status == 200) {
 
-            the_result = api_request.responseText;
+            var the_result = api_request.responseText;
             data = JSON.parse(the_result);
-            display_articles();
+            display_articles(data);
         }
     };
 
-    endpoint = "https://newsapi.org/v2/top-headlines";
+    var endpoint = "https://newsapi.org/v2/top-headlines";
     query = "?country=" + country + "&category=" + category;
     key = "&apiKey=5ff4a72e528b4f319854a4f14a2b0c9c";
     url = endpoint + query + key;
@@ -63,7 +63,7 @@ function api_call_weather() {
 
             the_result_weather = api_request_weather.responseText;
             data = JSON.parse(the_result_weather);
-            display_weather();
+            display_weather(data);
         }
     };
 
@@ -77,11 +77,11 @@ function api_call_weather() {
 }
 
 //Getting news data to the page
-function display_articles() {
+function display_articles(data) {
     var main_content = document.getElementById('main-content');
     var html = "";
     var noDescription = "";
-    // console.log(data);
+    //console.log(data);
     for (var i = 0; i < data.articles.length; i++) {
         html += "<article class=\"content-wide\">";
         html += "<a target=\"_blank\" href='" + data.articles[i].url + "' >";
@@ -100,17 +100,6 @@ function display_articles() {
     main_content.innerHTML = html;
     }
 
-function display_weather() {
-    window.myWidgetParam ? window.myWidgetParam : window.myWidgetParam = [];  
-    window.myWidgetParam.push({id: 13,cityid: '2643743',appid: 'c35fc6de6d76e7eef96c6606b320ee78',units: 'metric',containerid: 'openweathermap-widget-13',  });  
-    var script = document.createElement('openweathermap-widget-13');
-	script.async = true;
-	script.charset = "utf-8";
-	script.src = "//openweathermap.org/themes/openweathermap/assets/vendor/owm/js/weather-widget-generator.js";
-	var s = document.getElementsByTagName('openweathermap-widget-13')[0];
-	s.parentNode.insertBefore(script, s);
-}
-
 function latestNews(target, value){
     set_value("category", "");
     set_value(target, value);
@@ -120,9 +109,9 @@ function latestNews(target, value){
 //Main function triggered by buttons 
 function news_query(target, value) {
     set_value(target, value);
-    set_city();
+   
     api_call();
-    api_call_weather();
+    
     // console.log(data);
     //display_articles();
 }
