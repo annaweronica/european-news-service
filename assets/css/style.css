@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Abril+Fatface|PT+Serif|Playfair+Display&display=swap');
 
-div{
+/*div{
     border: 1px solid black;
-}
+}*/
 
 html, body {
   height: 100%;
@@ -127,8 +127,8 @@ a h1:hover{
 /* ---------------------------------------------GO UP BUTTON */
 
 #myBtn {
-    height: 32px;
-    width: 38px;
+    height: 52px;
+    width: 58px;
     display: none; /* Hidden by default */
     position: fixed; /* Fixed/sticky position */
     bottom: 3rem; /* Place the button at the bottom of the page */
