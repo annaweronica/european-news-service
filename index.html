@@ -20,16 +20,15 @@
 			<div class="col-lg-12" id="header">
 				<div class="row justify-content-center" id="news-heading">
 					<div class="display-8 news-head-title"><i class="fas fa-globe-europe"></i>THE NEWS</div>
-					<!--<div id="openweathermap-widget-13">WIDGET</div>-->
 				</div>
 				<!--BUTTONS DEFINITION FOR COUNTRIES-->
-				<div class="row d-flex justify-content-center" id="buttons_countries_container">
-					<button type="button" id="btn_country_sweden" class="btn btn-ghost btn-sm flag" value="se" onclick="news_query('country', 'se')"><img src="assets/flags/sweden.png" height="30px" width="30px"></button>
-					<button type="button" id="btn_country_poland" class="btn btn-ghost btn-sm" value="pl" onclick="news_query('country', 'pl')"><img src="assets/flags/poland.png" height="30px" width="30px"></button>
-					<button type="button" id="btn_country_england" class="btn btn-ghost btn-sm" value="gb" onclick="news_query('country', 'gb')"><img src="assets/flags/england.png" height="30px" width="30px"></button>
-				</div>
+				<div class="row d-flex justify-content-center" id="images_countries_container">
+					<img src="assets/flags/sweden.png" id="img_country_sweden" class="flag" alt="flag" onclick="news_query('country', 'se')">
+					<img src="assets/flags/poland.png" id="img_country_poland" class="flag" alt="flag" onclick="news_query('country', 'pl')">
+					<img src="assets/flags/england.png" id="img_country_england" class="flag" alt="flag" onclick="news_query('country', 'gb')">           
+                </div>
 
-				<!--BUTTONS DEFINITION FOR CATEGORIES-->
+                <!--BUTTONS DEFINITION FOR CATEGORIES-->
 				<div class="row justify-content-center" id="buttons_countries_categories">
 					<button type="button" id="btn_category_latest_news" class="btn btn-ghost-dark btn-sm" onclick="latestNews('country', country)">LATEST NEWS</button>
 					<button type="button" id="btn_category_business" class="btn btn-ghost-dark btn-sm" onclick="news_query('category', 'business')">BUSINESS</button>
@@ -41,22 +40,21 @@
 				</div>
 			</div>
 		</div>
+
 		<!--CONTENT CONTAINER-->
 		<div class="container-fluid">
 			<div class="teaser-wrapper row content-container justify-content-center">
 				<article class="col-lg-6 wide-column col content-wide">
 					<div id="main-content">
-						<!--<h1></h1>
-						<img>
-						<figcaption id="description"></figcaption>
-						<hr>-->
+                   
 					</div>
 				</article>
 			</div>
 		</div>
+
 		<!--GO UP BUTTON-->
 		<div>
-			<button onclick="topFunction()" id="myBtn" title="Go up"><img src="assets/icons/go_top.png" atr="icon go top" height="32px" width="38px"></button>
+			<img src="assets/icons/go_top.png" alt="icon go top" onclick="topFunction()" id="myBtn" title="Go up">
 		</div>
 
 	</div>

@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Abril+Fatface|PT+Serif|Playfair+Display&display=swap');
 
-/*div{
+div{
     border: 1px solid black;
-}*/
+}
 
 html, body {
   height: 100%;
@@ -50,12 +50,22 @@ body{
     display: block;
 }
 
-#buttons_countries_container button{
-    font-size: 1.5rem;
+#images_countries_container img{
+    font-size: 0.2rem;
+    padding: 0.2rem;
 }
 
 a button:hover, a:visited, a:link, a:active {
     text-decoration:  none;
+}
+
+/*#img_country_poland{
+    border: 0.5px solid red;
+}*/
+
+.flag{
+    height: 30px;
+    width: 30px;
 }
 
 #buttons_countries_categories button{
@@ -92,7 +102,7 @@ a img:hover{
 }
 
 #main-content{
-    margin-top: 13rem;
+    margin-top: 17rem;
 }
 
 a:hover, a:visited, a:link, a:active {
@@ -117,22 +127,24 @@ a h1:hover{
 /* ---------------------------------------------GO UP BUTTON */
 
 #myBtn {
-  display: none; /* Hidden by default */
-  position: fixed; /* Fixed/sticky position */
-  bottom: 3rem; /* Place the button at the bottom of the page */
-  right: 3rem; /* Place the button 30px from the right */
-  z-index: 99; /* Make sure it does not overlap */
-  /* border: 1px solid; Remove borders */
-  outline: none; /* Remove outline */
-  background-color: #b7a295; /* Set a background color */
-  color: #303030; /* Text color */
-  cursor: pointer; /* Add a mouse pointer on hover */
-  padding: 8px; /*Some padding*/
-  border-radius: 10px; /* Rounded corners */
-  font-size: 1rem; /* Increase font size */
-  font-family: 'Abril Fatface', cursive;;
+    height: 32px;
+    width: 38px;
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 3rem; /* Place the button at the bottom of the page */
+    right: 3rem; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    /* border: 1px solid; Remove borders */
+    outline: none; /* Remove outline */
+    background-color: #b7a295; /* Set a background color */
+    color: #303030; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 8px; /*Some padding*/
+    border-radius: 10px; /* Rounded corners */
+    font-size: 1rem; /* Increase font size */
+    font-family: 'Abril Fatface', cursive;;
 }
 
 #myBtn:hover {
-  background-color: #e7dfdb; /* Add a dark-grey background on hover */
+    background-color: #e7dfdb; /* Add a dark-grey background on hover */
 }
