@@ -2,66 +2,74 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
-    <title>European News Service</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+		integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+		integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+	<link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+	<title>European News Service</title>
 </head>
 
 <body>
-    <!--PAGE HEADER-->
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-lg-12" id="header">
-                <div class="row justify-content-center" id="news-heading">
-                    <div class="display-8 news-head-title"><i class="fas fa-globe-europe"></i>THE NEWS</div>
+	<!--PAGE HEADER-->
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-lg-12" id="header">
+				<div class="row justify-content-center" id="news-heading">
+					<div class="display-8 news-head-title"><i class="fas fa-globe-europe"></i>THE NEWS</div>
+				</div>
+				<!--BUTTONS DEFINITION FOR COUNTRIES-->
+				<div class="row d-flex justify-content-center" id="images_countries_container">
+					<img src="assets/flags/sweden.png" id="img_country_sweden" class="flag" alt="flag" onclick="news_query('country', 'se')">
+					<img src="assets/flags/poland.png" id="img_country_poland" class="flag" alt="flag" onclick="news_query('country', 'pl')">
+					<img src="assets/flags/england.png" id="img_country_england" class="flag" alt="flag" onclick="news_query('country', 'gb')">
                 </div>
-                <!--BUTTONS DEFINITION FOR COUNTRIES-->
-                <div class="row d-flex justify-content-center" id="images_countries_container">
-                    <img src="assets/flags/sweden.png" id="img_country_sweden" class="flag" alt="flag" onclick="news_query('country', 'se')">
-                    <img src="assets/flags/poland.png" id="img_country_poland" class="flag" alt="flag" onclick="news_query('country', 'pl')">
-                    <img src="assets/flags/england.png" id="img_country_england" class="flag" alt="flag" onclick="news_query('country', 'gb')">
-                </div>
 
-                <!--BUTTONS DEFINITION FOR CATEGORIES-->
-                <div class="row justify-content-center" id="buttons_countries_categories">
-                    <button type="button" id="btn_category_latest_news" class="btn btn-ghost-dark btn-sm" onclick="latestNews('country', country)">LATEST NEWS</button>
-                    <button type="button" id="btn_category_business" class="btn btn-ghost-dark btn-sm" onclick="news_query('category', 'business')">BUSINESS</button>
-                    <button type="button" id="btn_category_entertainment" class="btn btn-ghost-dark btn-sm" onclick="news_query('category', 'entertainment')">ENTERTAINMENT</button>
-                    <button type="button" id="btn_category_health" class="btn btn-ghost-dark btn-sm" onclick="news_query('category', 'health')">HEALTH</button>
-                    <button type="button" id="btn_category_science" class="btn btn-ghost-dark btn-sm" onclick="news_query('category', 'science')">SCIENCE</button>
-                    <button type="button" id="btn_category_sports" class="btn btn-ghost-dark btn-sm" onclick="news_query('category', 'sports')">SPORTS</button>
-                    <button type="button" id="btn_category_technology" class="btn btn-ghost-dark btn-sm" onclick="news_query('category', 'technology')">TECHNOLOGY</button>
-                </div>
-            </div>
-        </div>
+					<!--BUTTONS DEFINITION FOR CATEGORIES-->
+					<div class="row justify-content-center" id="buttons_countries_categories">
+						<button type="button" id="btn_category_latest_news" class="btn btn-ghost-dark btn-sm" onclick="latestNews('country', country)">LATEST NEWS</button>
+						<button type="button" id="btn_category_business" class="btn btn-ghost-dark btn-sm" onclick="news_query('category', 'business')">BUSINESS</button>
+						<button type="button" id="btn_category_entertainment" class="btn btn-ghost-dark btn-sm" onclick="news_query('category', 'entertainment')">ENTERTAINMENT</button>
+						<button type="button" id="btn_category_health" class="btn btn-ghost-dark btn-sm" onclick="news_query('category', 'health')">HEALTH</button>
+						<button type="button" id="btn_category_science" class="btn btn-ghost-dark btn-sm" onclick="news_query('category', 'science')">SCIENCE</button>
+						<button type="button" id="btn_category_sports" class="btn btn-ghost-dark btn-sm" onclick="news_query('category', 'sports')">SPORTS</button>
+						<button type="button" id="btn_category_technology" class="btn btn-ghost-dark btn-sm" onclick="news_query('category', 'technology')">TECHNOLOGY</button>
+					</div>
+				</div>
+			</div>
 
-        <!--CONTENT CONTAINER-->
-        <div class="container-fluid">
-            <div class="teaser-wrapper row content-container justify-content-center">
-                <article class="col-lg-4 wide-column col content-wide">
-                    <div id="main-content">
+			<!--CONTENT CONTAINER-->
+			<div class="container-fluid">
+				<div class="teaser-wrapper row content-container justify-content-center">
+					<article class="col-lg-4 wide-column col content-wide">
+						<div id="main-content">
 
-                    </div>
-                </article>
-            </div>
-        </div>
+						</div>
+					</article>
+				</div>
+			</div>
 
-        <!--GO UP BUTTON-->
-        <div>
-           <!-- <img src="assets/icons/go_top.png" alt="icon go top" onclick="topFunction()" id="myBtn" title="Go up">-->
-            <button type="button" onclick="topFunction()" id="myBtn" class="btn btn-ghost-dark btn-sm" title="Go up"><i class="fas fa-chevron-circle-up"></i></button>
-        </div>
+			<!--GO UP BUTTON-->
+			<div>
+				<!-- <img src="assets/icons/go_top.png" alt="icon go top" onclick="topFunction()" id="myBtn" title="Go up">-->
+				<button type="button" onclick="topFunction()" id="myBtn" class="btn btn-ghost-dark" title="Go up"><i class="fas fa-chevron-circle-up"></i></button>
+			</div>
 
-    </div>
+		</div>
 
-    <script src="myscript.js"></script>
-    <script>
-        news_query('country', 'se')
-    </script>
+		<footer id="sticky-footer" class="py-4">
+			<div class="container text-center">
+				<small>THE NEWS Contact</small>
+			</div>
+		</footer>
+
+		<script src="myscript.js"></script>
+		<script>
+			news_query('country', 'se')
+		</script>
 </body>
 
 </html>

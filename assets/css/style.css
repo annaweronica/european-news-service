@@ -97,6 +97,7 @@ a img:hover{
 
 #main-content{
     margin-top: 17rem;
+     flex: 1 0 auto;
 }
 
 a:hover, a:visited, a:link, a:active {
@@ -133,6 +134,14 @@ a h1:hover{
 
 #myBtn:hover {
     color: grey;
+}
+
+/* ---------------------------------------------FOOTER */
+
+#sticky-footer {
+  flex-shrink: none;
+  background-color: #e7dfdb;
+  color: #303030;
 }
 
 /* ---------------------------------------------MEDIA QUERY */
