@@ -46,7 +46,6 @@ body{
 .news-head-title{
     font-family: 'Abril Fatface', cursive;
     letter-spacing: 15px;
-   
     display: block;
 }
 
@@ -97,7 +96,7 @@ a img:hover{
 
 #main-content{
     margin-top: 17rem;
-     flex: 1 0 auto;
+    flex: 1 0 auto;
 }
 
 a:hover, a:visited, a:link, a:active {
@@ -151,7 +150,15 @@ a h1:hover{
   #header{
     padding-bottom: 0.5rem;
     margin-bottom: 0.5rem;
-    color: red;
+    }
+
+    .news-head-title{
+    font-size: 1.8rem;
+    letter-spacing: none;
+    }
+
+    #main-content{
+    margin-top: 12rem;
     }
 
     #buttons_countries_categories button{
@@ -160,6 +167,6 @@ a h1:hover{
     }
 
     #myBtn {
-    font-size: 1.5rem;
+    font-size: 2rem;
     }
 }
