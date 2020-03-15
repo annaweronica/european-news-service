@@ -41,15 +41,15 @@ function api_call() {
         if (this.readyState == 4 && this.status == 200) {
 
             var the_result = api_request.responseText;
-            data = JSON.parse(the_result);
+            var data = JSON.parse(the_result);
             display_articles(data);
         }
     };
 
     var endpoint = "https://newsapi.org/v2/top-headlines";
-    query = "?country=" + country + "&category=" + category;
-    key = "&apiKey=5ff4a72e528b4f319854a4f14a2b0c9c";
-    url = endpoint + query + key;
+    var query = "?country=" + country + "&category=" + category;
+    var key = "&apiKey=5ff4a72e528b4f319854a4f14a2b0c9c";
+    var url = endpoint + query + key;
     // console.log(url);
     api_request.open("GET", url, true);
     api_request.send();
@@ -61,16 +61,16 @@ function api_call_weather() {
     api_request_weather.onreadystatechange = function () {
         if (this.readyState == 4 && this.status == 200) {
 
-            the_result_weather = api_request_weather.responseText;
-            data = JSON.parse(the_result_weather);
+            var the_result_weather = api_request_weather.responseText;
+            var data = JSON.parse(the_result_weather);
             display_weather(data);
         }
     };
 
-    endpoint = "https://api.openweathermap.org/data/2.5/weather";
-    query = "?q=" + city;
-    key = "&appid=c35fc6de6d76e7eef96c6606b320ee78";
-    url = endpoint + query + key;
+    var endpoint = "https://api.openweathermap.org/data/2.5/weather";
+    var query = "?q=" + city;
+    var key = "&appid=c35fc6de6d76e7eef96c6606b320ee78";
+    var url = endpoint + query + key;
     console.log(url);
     api_request_weather.open("GET", url, true);
     api_request_weather.send();
@@ -104,20 +104,21 @@ function latestNews(target, value){
     set_value("category", "");
     set_value(target, value);
     api_call();
+    topFunction();
 }
 
 //Main function triggered by buttons 
 function news_query(target, value) {
     set_value(target, value);
-   
     api_call();
+    topFunction();
     
     // console.log(data);
     //display_articles();
 }
 
 //JUMP TO THE TOP BUTTON & SHRINKING HEADER
-mybutton = document.getElementById("myBtn");
+var mybutton = document.getElementById("myBtn");
 // When the user scrolls down 20px from the top of the document, show the button
 // When the user scrolls down 50px from the top of the document, resize the header's font size
 window.onscroll = function() {scrollFunction();};

@@ -55,13 +55,13 @@ body{
     padding: 0.2rem;
 }
 
-a button:hover, a:visited, a:link, a:active {
+/*a button:hover, a:visited, a:link, a:active {
     text-decoration:  none;
-}
-
-/*#img_country_poland{
-    border: 0.5px solid red;
 }*/
+
+#images_countries_container img:hover{
+    color: red;
+}
 
 .flag{
     height: 30px;
@@ -136,7 +136,7 @@ a h1:hover{
     background-color: #b7a295;
     cursor: pointer;
     padding: 8px;
-    border-radius: 10px;
+    border-radius: 8px;
     border: 0.8px solid black;
 }
 
@@ -147,8 +147,21 @@ a h1:hover{
 /* ---------------------------------------------MEDIA QUERY */
 
 
-@media only screen and (max-width: 600px) {
-  body {
-    background-color: lightblue;
-  }
+@media only screen and (max-width: 414px) {
+  #header{
+    padding-bottom: 0.5rem;
+    margin-bottom: 0.5rem;
+    color: red;
+    }
+
+    #buttons_countries_categories button{
+    font-size: 0.8rem;
+    letter-spacing: none;
+    }
+
+    #myBtn {
+    height: 32px;
+    width: 38px;
+    border-radius: 5px;
+    }
 }
