@@ -55,13 +55,9 @@ body{
     padding: 0.2rem;
 }
 
-/*a button:hover, a:visited, a:link, a:active {
-    text-decoration:  none;
-}*/
-
 #images_countries_container img:hover{
-    color: red;
-}
+     opacity: 0.5;
+}  
 
 .flag{
     height: 30px;
@@ -125,23 +121,18 @@ a h1:hover{
 /* ---------------------------------------------GO UP BUTTON */
 
 #myBtn {
-    height: 52px;
-    width: 62px;
+    font-size: 3rem;
     display: none;
     position: fixed;
     bottom: 3rem;
     right: 3rem;
     z-index: 99;
     outline: none;
-    background-color: #b7a295;
-    cursor: pointer;
-    padding: 8px;
-    border-radius: 8px;
-    border: 0.8px solid black;
+    cursor: pointer; 
 }
 
 #myBtn:hover {
-    background-color: #e7dfdb;
+    color: grey;
 }
 
 /* ---------------------------------------------MEDIA QUERY */
@@ -160,8 +151,6 @@ a h1:hover{
     }
 
     #myBtn {
-    height: 32px;
-    width: 38px;
-    border-radius: 5px;
+    font-size: 1.5rem;
     }
 }
