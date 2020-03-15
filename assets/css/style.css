@@ -158,15 +158,15 @@ a h1:hover{
     }
 
     #main-content{
-    margin-top: 12rem;
+    margin-top: 8rem;
     }
 
     #buttons_countries_categories button{
-    font-size: 0.8rem;
-    letter-spacing: none;
+    display: none;
     }
 
     #myBtn {
     font-size: 2rem;
+    bottom: 1.5rem;
     }
 }
