@@ -138,7 +138,7 @@ a h1:hover{
 /* ---------------------------------------------FOOTER */
 
 #sticky-footer {
-  flex-shrink: none;
+  flex-shrink: 0;
   background-color: #e7dfdb;
   color: #303030;
 }
@@ -154,7 +154,7 @@ a h1:hover{
 
     .news-head-title{
     font-size: 1.5rem;
-    letter-spacing: none;
+    letter-spacing: normal;
     }
 
     #main-content{
