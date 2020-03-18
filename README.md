@@ -3,7 +3,7 @@ Title: European News Service
 
 ---
 
-Aim:
+Aim: To get updated with the lastest news from choosen countries and within six categories.
 
 #UX
 Target audience:
@@ -15,6 +15,9 @@ Wireframes:
 
 
 USER STORIES
+- As a user I want to see news from the default country as I open the webpage.
+- As a user I want to be able to choose from which country I want to read the news from.
+- As a user I want to 
 
 
 #Technologies
@@ -25,7 +28,6 @@ JavaScript
 
 Frameworks:
 Bootstrap
-jQuery
 
 External sources imported to the project:
 

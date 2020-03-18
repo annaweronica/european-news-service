@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Abril+Fatface|PT+Serif|Playfair+Display&display=swap');
 
-/*div{
+div{
     border: 1px solid black;
-}*/
+}
 
 html, body {
   height: 100%;
@@ -153,16 +153,21 @@ a h1:hover{
     }
 
     .news-head-title{
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     letter-spacing: none;
     }
 
     #main-content{
-    margin-top: 8rem;
+    margin-top: 13rem;
     }
 
-    #buttons_countries_categories button{
-    display: none;
+    #images_countries_container img{
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    }
+
+   #buttons_countries_categories button{
+    font-size: 0.4rem;
     }
 
     #myBtn {
