@@ -81,11 +81,18 @@ function display_articles(data) {
     var main_content = document.getElementById('main-content');
     var html = "";
     var noDescription = "";
+    var noImage = "";
+
     //console.log(data);
     for (var i = 0; i < data.articles.length; i++) {
         html += "<article class=\"content-wide\">";
         html += "<a target=\"_blank\" href='" + data.articles[i].url + "' >";
         html += "<h1>" + data.articles[i].title + "</h1>";
+        if(data.articles[i].urlToImage == null){
+            noImage = "assets/images/no-photo.png"
+        }else{
+            noImage = data.articles[i].urlToImage;
+        }
         html += "<img src=\"" + data.articles[i].urlToImage + "\" alt=\"news-image\" height=\"\" width=\"\">";
         html += "</a>";
         if (data.articles[i].description == null) {
