@@ -50,7 +50,7 @@ body{
 }
 
 #images_countries_container img{
-    font-size: 0.2rem;
+    font-size: 2rem;
     padding: 0.2rem;
 }
 
@@ -59,8 +59,8 @@ body{
 }  
 
 .flag{
-    height: 30px;
-    width: 30px;
+    height: 35px;
+    width: 35px;
 }
 
 #buttons_countries_categories button{
@@ -95,7 +95,7 @@ a img:hover{
 }*/
 
 #main-content{
-    margin-top: 17rem;
+    margin-top: 13rem;
     flex: 1 0 auto;
 }
 
@@ -158,7 +158,7 @@ a h1:hover{
     }
 
     #main-content{
-    margin-top: 6rem;
+    margin-top: 8rem;
     }
 
     #images_countries_container img{
@@ -167,11 +167,11 @@ a h1:hover{
     }
 
    #buttons_countries_categories button{
-    font-size: 0.5rem;
+    font-size: 0.7rem;
     }
 
     #myBtn {
-    font-size: 2rem;
-    bottom: 1.5rem;
+    font-size: 1.5rem;
+    bottom: 1rem;
     }
 }

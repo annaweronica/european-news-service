@@ -1,5 +1,5 @@
 
-Title: European News Service
+European News Service
 
 ---
 
@@ -7,7 +7,8 @@ Aim: To get updated with the lastest news from choosen countries and within six 
 
 #UX
 Target audience:
-
+The user who is interested in latest news from certian country with certain category.
+The user can choose between Sweden as default country, Poland, United Kingdom (named England here)
 Layout:
 
 
@@ -108,6 +109,9 @@ Anna have joined Code Institue to leran as much as she can from she believes bes
 - Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
 - Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
 - Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
+- Icons made by <a href="https://www.flaticon.com/authors/roundicons" title="Roundicons">Roundicons</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
+- Icons made by <a href="https://www.flaticon.com/authors/roundicons" title="Roundicons">Roundicons</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
+- Icons made by <a href="https://www.flaticon.com/authors/roundicons" title="Roundicons">Roundicons</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
 ---
 
 Enjoy!
