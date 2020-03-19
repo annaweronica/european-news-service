@@ -1,13 +1,6 @@
 //Global variables
 var country = "";
 var category = "";
-var city = "";
-//var data;
-
-//Creating local storage
-//localStorage.setItem("country", country);
-//var target = localStorage.getItem("country");
-//var value = localStorage.getItem("category");
 
 //Defining a function setting the variables (country, category) 
 function set_value(target, value) {
@@ -19,20 +12,6 @@ function set_value(target, value) {
     }
     return country, category;
 }
-
-//function set_city(){
-   //if (country == "se"){
-    //    city = "stockholm";
-   // }
-   // if (country == "pl"){
-    //    city = "gdansk";
-  //  }
-  //  if (country == "gb"){
-   //     city = "london";
-   // }
-  //  console.log(city);
-  //  return city;
-//}
 
 //Building the request object and calling news API
 function api_call() {
@@ -50,38 +29,17 @@ function api_call() {
     var query = "?country=" + country + "&category=" + category;
     var key = "&apiKey=5ff4a72e528b4f319854a4f14a2b0c9c";
     var url = endpoint + query + key;
-    // console.log(url);
+   // console.log(url);
     api_request.open("GET", url, true);
     api_request.send();
 }
-
-//WEAHTER API
-//function api_call_weather() {
-   // var api_request_weather = new XMLHttpRequest();
-    //api_request_weather.onreadystatechange = function () {
-       // if (this.readyState == 4 && this.status == 200) {
-
-           // var the_result_weather = api_request_weather.responseText;
-           // var data = JSON.parse(the_result_weather);
-            //display_weather(data);
-       // }
-  //  };
-
-  //  var endpoint = "https://api.openweathermap.org/data/2.5/weather";
-  //  var query = "?q=" + city;
- //   var key = "&appid=c35fc6de6d76e7eef96c6606b320ee78";
-  //  var url = endpoint + query + key;
-  //  console.log(url);
-  //  api_request_weather.open("GET", url, true);
-    //api_request_weather.send();
-//}
 
 //Getting news data to the page
 function display_articles(data) {
     var main_content = document.getElementById('main-content');
     var html = "";
     var noDescription = "";
-    var noImage = "";
+    var image = "";
 
     //console.log(data);
     for (var i = 0; i < data.articles.length; i++) {
@@ -89,11 +47,11 @@ function display_articles(data) {
         html += "<a target=\"_blank\" href='" + data.articles[i].url + "' >";
         html += "<h1>" + data.articles[i].title + "</h1>";
         if(data.articles[i].urlToImage == null){
-            noImage = "assets/images/no-photo.png"
+           image = "assets/images/no-photo.png";
         }else{
-            noImage = data.articles[i].urlToImage;
+           image = data.articles[i].urlToImage;
         }
-        html += "<img src=\"" + data.articles[i].urlToImage + "\" alt=\"news-image\" height=\"\" width=\"\">";
+        html += "<img src=\"" + image + "\" alt=\"news-image\" height=\"\" width=\"\">";
         html += "</a>";
         if (data.articles[i].description == null) {
             noDescription = "No description.";
