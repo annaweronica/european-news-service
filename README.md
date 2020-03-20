@@ -1,4 +1,8 @@
 
+![image](/assets/images/news-title-header.png) <br>
+
+---
+
 [THE NEWS](https://annaweronica.github.io/european-news-service/)
 
 ---
@@ -7,16 +11,18 @@ Aim: To get updated with the lastest news from choosen countries and within six 
 
 #UX
 
-Target audience:
-The user who is interested in latest news from certian country within certain category.
-The user can choose among:
+Target audience:<br>
+
+The user who is interested in latest news from *Country* within *Category*.
+The *Country* user can choose among:
     - Sweden as default country, 
     - Poland, 
-    - United Kingdom (named England here) and 
-    - Ireland. 
+    - United Kingdom (named England here)
+    - Ireland
+    - France.
 The list of the countries is a subject to be extented. 
 
-There are six categories for each country to choose from: 
+There are six categories for each *Country* to choose from: 
     - Business
     - Entertainment
     - Health
@@ -25,11 +31,32 @@ There are six categories for each country to choose from:
     - Technology
     - Latest news which is the section for all news from certain country.
 
-The user path:
-The default contry and category is Sweden with all the news (all categories). While the user click on the category for example Health and change the country then the section Helth from the other country will display. The page each time the user click on country and/or category goes to the top.
+**The user path:** <br>
+The default settings while opening the webpage is:
+- *Country*: *Sweden*
+- *Category*: *Latest news* (all categories for *Country*) dispalyed.<br>
+
+By default clicling on any *Country* only (without selecting *Category*) it will open the *Latest news* section.<br>
+
+The user must scroll down to read the news.<br>
+
+The user can be back to the top either:
+- by clicking on any *Country*
+- by clicking on any *Category*
+- by clicking on a *Go to the top* button on the right bottom of the webpage
+
+**Optional paths:** <br>
+
+The user can click on:
+
+- *Country* to see *Latest news* from for example *Poland* and/or choose *Category* for example *Science*<br>
+- Then staying in the *Catogory* *Science* the user can change the *Country* for Sweden and he will stay within the same *Category* just different *Country*
+
+While the user click on the category for example *Health* and change the country then the section *Helth* from the other country will display. The page each time the user click on country and/or category goes to the top.
 The second option for going to the top is the "Go up" button on the right bottom of the webpage.
 
 Wireframes:
+
 
 
 USER STORIES
