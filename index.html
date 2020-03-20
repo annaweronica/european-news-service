@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
     <title>European News Service</title>
 </head>
@@ -18,14 +19,16 @@
             <div class="col-lg-12" id="header">
                 <div class="row justify-content-center" id="news-heading">
                     <div class="display-8 news-head-title"><i class="fas fa-globe-europe"></i>THE NEWS</div>
+                    <div id="customize-script-container"></div>
                 </div>
                 <!--BUTTONS DEFINITION FOR COUNTRIES-->
                 <div class="row d-flex justify-content-center" id="images_countries_container">
-                    <img src="assets/flags/sweden.png" id="img_country_sweden" class="flag" alt="flag-sweden" onclick="news_query('country', 'se')">
-                    <img src="assets/flags/poland.png" id="img_country_poland" class="flag" alt="flag-poland" onclick="news_query('country', 'pl')">
-                    <img src="assets/flags/ireland.png" id="img_country_ireland" class="flag" alt="flag-ireland" onclick="news_query('country', 'ie')">
-                    <img src="assets/flags/england.png" id="img_country_england" class="flag" alt="flag-england" onclick="news_query('country', 'gb')">
-                    <img src="assets/flags/france.png" id="img-country-france" class="flag" alt="flag-france" onclick="news_query('country', 'fr')">
+                    <img src="assets/flags/sweden.png" id="img_country_sweden" class="flag" alt="flag-sweden" data-coord="65.8591,19.0172" onclick="onClickHandler(event)" onclick="news_query('country', 'se')">
+                    <img src="assets/flags/poland.png" id="img_country_poland" class="flag" alt="flag-poland" data-coord="51.8993,20.3889" onclick="onClickHandler(event)" onclick="news_query('country', 'pl')">
+                    <img src="assets/flags/ireland.png" id="img_country_ireland" class="flag" alt="flag-ireland" data-coord="53.0787,-7.7986" onclick="onClickHandler(event)" onclick="news_query('country', 'ie')">
+                    <img src="assets/flags/england.png" id="img_country_england" class="flag" alt="flag-england" data-coord="52.4188,-1.2473" onclick="onClickHandler(event)" onclick="news_query('country', 'gb')">
+                    <img src="assets/flags/france.png" id="img-country-france" class="flag" alt="flag-france" data-coord="46.6985,2.549" onclick="onClickHandler(event)" onclick="news_query('country', 'fr')">
+                    <!--<button data-coord="52.2377,21.0054" onclick="onClickHandler(event)">Warsaw</button>-->
                 </div>
 
                 <!--BUTTONS DEFINITION FOR CATEGORIES-->

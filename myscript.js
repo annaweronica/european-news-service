@@ -29,7 +29,7 @@ function api_call() {
     var query = "?country=" + country + "&category=" + category;
     var key = "&apiKey=5ff4a72e528b4f319854a4f14a2b0c9c";
     var url = endpoint + query + key;
-   // console.log(url);
+    // console.log(url);
     api_request.open("GET", url, true);
     api_request.send();
 }
@@ -46,10 +46,10 @@ function display_articles(data) {
         html += "<article class=\"content-wide\">";
         html += "<a target=\"_blank\" href='" + data.articles[i].url + "' >";
         html += "<h1>" + data.articles[i].title + "</h1>";
-        if(data.articles[i].urlToImage == null){
-           image = "assets/images/no-photo.png";
-        }else{
-           image = data.articles[i].urlToImage;
+        if (data.articles[i].urlToImage == null) {
+            image = "assets/images/no-photo.png";
+        } else {
+            image = data.articles[i].urlToImage;
         }
         html += "<img src=\"" + image + "\" alt=\"news-image\" height=\"\" width=\"\">";
         html += "</a>";
@@ -61,15 +61,34 @@ function display_articles(data) {
         html += "<figcaption>" + noDescription + "</figcaption>";
         html += "<hr>";
         html += "</article>";
+        html = html.replace("http:", "https:");
     }
     main_content.innerHTML = html;
-    }
+}
 
-function latestNews(target, value){
+
+const onClickHandler = (() => {
+    const head = document.getElementsByTagName('head').item(0);
+    let script;
+    let widgetEl = document.getElementById('customize-script-container');
+    return (e) => {
+        widgetEl.innerHTML = '';
+        if (script) {
+            head.removeChild(script);
+        }
+        script = document.createElement('script');
+        script.setAttribute('src', `https://darksky.net/widget/default-small/${e.target.dataset.coord}/ca12/en.js?width=100%&height=70&title=Full Forecast&textColor=333333&bgColor=FFFFFF&transparency=true&skyColor=undefined&fontFamily=Default&customFont=&units=ca'`);
+        head.appendChild(script)
+    }
+})();
+
+
+function latestNews(target, value) {
     set_value("category", "");
     set_value(target, value);
     api_call();
     topFunction();
+
 }
 
 //Main function triggered by buttons 
@@ -77,7 +96,7 @@ function news_query(target, value) {
     set_value(target, value);
     api_call();
     topFunction();
-    
+
     // console.log(data);
     //display_articles();
 }
@@ -86,22 +105,22 @@ function news_query(target, value) {
 var mybutton = document.getElementById("myBtn");
 // When the user scrolls down 20px from the top of the document, show the button
 // When the user scrolls down 50px from the top of the document, resize the header's font size
-window.onscroll = function() {scrollFunction();};
+window.onscroll = function () { scrollFunction(); };
 
 function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    mybutton.style.display = "block";
-  } else {
-    mybutton.style.display = "none";
-  }
-   if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-    document.getElementById("header").style.fontSize = "30px";
-  } else {
-    document.getElementById("header").style.fontSize = "90px";
-  }
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+    } else {
+        mybutton.style.display = "none";
+    }
+    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+        document.getElementById("header").style.fontSize = "30px";
+    } else {
+        document.getElementById("header").style.fontSize = "90px";
+    }
 }
 // When the user clicks on the button, scroll to the top of the document
 function topFunction() {
-  document.body.scrollTop = 0; // For Safari
-  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
