@@ -140,14 +140,6 @@ a h1:hover{
     color: grey;
 }
 
-/* ---------------------------------------------FOOTER */
-
-#sticky-footer {
-  flex-shrink: 0;
-  background-color: #e7dfdb;
-  color: #303030;
-}
-
 /* ---------------------------------------------MEDIA QUERY */
 
 
