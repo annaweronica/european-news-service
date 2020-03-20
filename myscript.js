@@ -115,8 +115,10 @@ function scrollFunction() {
     }
     if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
         document.getElementById("header").style.fontSize = "30px";
+        document.getElementById("customize-script-container").style.display = "block";
     } else {
         document.getElementById("header").style.fontSize = "90px";
+        document.getElementById("customize-script-container").style.display = "none";
     }
 }
 // When the user clicks on the button, scroll to the top of the document
