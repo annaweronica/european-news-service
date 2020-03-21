@@ -1,6 +1,7 @@
 //Global variables
 var country = "";
 var category = "";
+var weatherScript = "";
 
 //Defining a function setting the variables (country, category) 
 function set_value(target, value) {
@@ -66,20 +67,27 @@ function display_articles(data) {
     main_content.innerHTML = html;
 }
 
-const onClickHandler = (() => {
-    const head = document.getElementsByTagName('head').item(0);
-    let script;
-    let widgetEl = document.getElementById('customize-script-container');
-    return (e) => {
-        widgetEl.innerHTML = '';
-        if (script) {
-            head.removeChild(script);
-        }
-        script = document.createElement('script');
-        script.setAttribute('src', `https://darksky.net/widget/default-small/${e.target.dataset.coord}/ca12/en.js?width=100%&height=70&title=Full Forecast&textColor=333333&bgColor=FFFFFF&transparency=true&skyColor=undefined&fontFamily=Default&customFont=&units=ca'`);
-        head.appendChild(script);
-    };
-})();
+function onClickHandler(event) {
+    var coordinates = event.target.dataset.coord;
+    var country = event.target.dataset.country
+
+    reset_and_load_weather_widget(coordinates);
+    news_query("country", country);
+};
+
+function reset_and_load_weather_widget(coordinates) {
+    var head = document.getElementsByTagName("head").item(0);
+    var widgetEl = document.getElementById("customize-script-container");
+    widgetEl.innerHTML = "";
+    
+    if (weatherScript) {
+        head.removeChild(weatherScript);
+    }
+
+    weatherScript = document.createElement("script");
+    weatherScript.setAttribute("src", "https://darksky.net/widget/default-small/" + coordinates + "ca12/en.js?width=100%&height=70&title=Full Forecast&textColor=333333&bgColor=FFFFFF&transparency=true&skyColor=undefined&fontFamily=Default&customFont=&units=ca");
+    head.appendChild(weatherScript);
+}
 
 function latestNews(target, value) {
     set_value("category", "");

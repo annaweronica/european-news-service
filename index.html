@@ -24,11 +24,11 @@
 				<div class="row " id="customize-script-container"></div>
 				<!--BUTTONS DEFINITION FOR COUNTRIES-->
 				<div class="row d-flex justify-content-center" id="images_countries_container">
-					<img src="assets/flags/sweden.png" id="img_country_sweden" class="flag" alt="flag-sweden" data-coord="65.8591,19.0172" onclick="news_query('country', 'se');onClickHandler(event);">
-					<img src="assets/flags/poland.png" id="img_country_poland" class="flag" alt="flag-poland" data-coord="51.8993,20.3889" onclick="news_query('country', 'pl');onClickHandler(event);">
-					<img src="assets/flags/ireland.png" id="img_country_ireland" class="flag" alt="flag-ireland" data-coord="53.0787,-7.7986" onclick="news_query('country', 'ie');onClickHandler(event);">
-					<img src="assets/flags/england.png" id="img_country_england" class="flag" alt="flag-england" data-coord="52.4188,-1.2473" onclick="news_query('country', 'gb');onClickHandler(event);">
-					<img src="assets/flags/france.png" id="img-country-france" class="flag" alt="flag-france" data-coord="46.6985,2.549" onclick="news_query('country', 'fr');onClickHandler(event);">
+					<img src="assets/flags/sweden.png" id="img_country_sweden" class="flag" alt="flag-sweden" data-coord="" data-country="se" onclick="onClickHandler(event);">
+					<img src="assets/flags/poland.png" id="img_country_poland" class="flag" alt="flag-poland" data-coord="51.8993,20.3889" data-country="pl" onclick="onClickHandler(event);">
+					<img src="assets/flags/ireland.png" id="img_country_ireland" class="flag" alt="flag-ireland" data-coord="53.0787,-7.7986" data-country="ie" onclick="onClickHandler(event);">
+					<img src="assets/flags/england.png" id="img_country_england" class="flag" alt="flag-england" data-coord="52.4188,-1.2473" data-country="gb" onclick="onClickHandler(event);">
+					<img src="assets/flags/france.png" id="img-country-france" class="flag" alt="flag-france" data-coord="46.6985,2.549" data-country="fr" onclick="onClickHandler(event);">
                 </div>
 
 					<!--BUTTONS DEFINITION FOR CATEGORIES-->
@@ -65,6 +65,7 @@
 		<script src="myscript.js"></script>
 		<script>
 			news_query('country', 'se')
+			reset_and_load_weather_widget('65.8591,19.0172')
 		</script>
 </body>
 
