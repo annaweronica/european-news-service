@@ -32,14 +32,27 @@ There are six categories for each *Country* to choose from:
 - Technology
 - Latest news which is the section for all news from certain country.
 
+**The structure of the news**
+
+- The title of the news
+- The image/no image/ broken image 
+- Description/ no description / lack of description
+
+The original news source opens in the new tab browser
+
 **The user path:** <br>
-The default settings while opening the webpage is:
+The default settings while opening the webpage:
 - *Country*: *Sweden*
 - *Category*: *Latest news* (all categories for *Country*) dispalyed.<br>
 
-By default clicling on any *Country* only (without selecting *Category*) it will open the *Latest news* section.<br>
+>*Latest news* section contains all news from different categories together.<br>
+>By default clicling on any *Country* only (without selecting *Category*) it will open the *Latest news* section.<br>
 
 The user must scroll down to read the news.<br>
+
+To open the link to the original news source the user can click either on:
+- Title of the news
+- Image/broken image
 
 The user can be back to the top of the webpage either:
 - by clicking on any *Country*
@@ -47,6 +60,8 @@ The user can be back to the top of the webpage either:
 - by clicking on a *Go up* button on the right bottom of the webpage
 
 **Optional paths:** <br>
+
+-> *Country* -> *Category
 
 The user can click on:
 
@@ -99,7 +114,7 @@ GitPod
 **Hosting service:**<br>
 GitHub
 
-**Knowledgeable resources which supported me during my work:**
+**Knowledgeable resources which supported the Developer during her work:**
 
 - [w3school](https://www.w3schools.com/js/default.asp)
 - [stackoverflow](https://stackoverflow.com/)
@@ -111,14 +126,11 @@ External code sources implemented and modified:
 - [scroll top](https://www.w3schools.com/howto/howto_js_scroll_to_top.asp)
 - [stickey footer](https://startbootstrap.com/snippets/sticky-footer-flexbox/)
 
-<h1>Deployment</h1>
-
-
 <h1>Testing</h1>
 
 **HTML Validator**
 - No errors or warnings to show. However:
-    > Please note: there is a workaround to avoid a warning regarding HTML code: <br>
+    > Please note: there is a workaround to avoid a warning: <br>
     > `<article class="col-lg-4 wide-column col content-wide">`<br>
 	>					`<h1>News</h1>`<br>
 	>					`<div id="main-content">`<br>
@@ -130,20 +142,34 @@ CSS Validator
 - No Error Found.
 
 JS Hint:
-- Statistics
+- Metrics:
 
+>There are 9 functions in this file.<br>
+>Function with the largest signature take 2 arguments, while the median is 0.<br>
+>Largest function has 21 statements in it, while the median is 4.<br>
+>The most complex function has a cyclomatic complexity value of 5 while the median is 1.
+
+>Two unused variables:
+>	- latestNews
+>	- news_query
+>There are called in HTML.
 
 <h2>Manual Testing</h2>
 
 Webpage and its responsiveness was tested on follwoing browsers:
-Chrom
-FireFox
-Edge
-Internet Explorer
+- Chrom
+- FireFox
+- Edge
+- Internet Explorer
+
+>![INTERNET EXPLORER IS NOT SUPPORTED] 
 
 
-TESTING THE FEATURES
+<h2>TESTING THE FEATURES</h2>
 
+1. Selecting the *Country* 
+2. Selecting the *Category*
+3. Clicking on the *Go up* button
 
 <h1>Deployment</h1>
 The webpage is hosted on github with one master branch: [https://github.com/annaweronica/european-news-service](https://github.com/annaweronica/european-news-service)
@@ -176,20 +202,29 @@ Commends below were made as the work incrementation was made progressively and p
 
 
 <h1>Credits</h1>
-Anna have joined Code Institue to leran as much as she can from she believes best teachers, tutors and mentors and that will give Anna the opportuinity to join IT work environment after the graduation of CI programme.
+Anna have joined Code Institue to leran as much as she can from the best teachers, tutors and mentors so she believs she will have the opportuinity to find the job as Developer after graduation of CI programme.<br>
+
+
+
+**Inspiration**
 
 <h2>Content</h2>
 [News API](https://newsapi.org/)
 
-[Ico]
+[Flags icons](https://www.flaticon.com/)
 
+> Icons made by <a href="https://www.flaticon.com/authors/roundicons" title="Roundicons">Roundicons</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
+> Icons made by <a href="https://www.flaticon.com/authors/roundicons" title="Roundicons">Roundicons</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
+> Icons made by <a href="https://www.flaticon.com/authors/roundicons" title="Roundicons">Roundicons</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
+> Icons made by <a href="https://www.flaticon.com/authors/roundicons" title="Roundicons">Roundicons</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
+> Icons made by <a href="https://www.flaticon.com/authors/roundicons" title="Roundicons">Roundicons</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
 
+[No photo image](https://www.freeiconspng.com/downloadimg/23483)
 
-- Icons made by <a href="https://www.flaticon.com/authors/roundicons" title="Roundicons">Roundicons</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
-- Icons made by <a href="https://www.flaticon.com/authors/roundicons" title="Roundicons">Roundicons</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
-- Icons made by <a href="https://www.flaticon.com/authors/roundicons" title="Roundicons">Roundicons</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
-- Icons made by <a href="https://www.flaticon.com/authors/roundicons" title="Roundicons">Roundicons</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
-Icons made by <a href="https://www.flaticon.com/authors/roundicons" title="Roundicons">Roundicons</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
+**Thank you**
+@Xav and @Kevin for support during the project<br>
+@Anna Greaves for inspiration on readme.md 
+
 ---
 
 Enjoy!

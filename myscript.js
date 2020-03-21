@@ -29,7 +29,6 @@ function api_call() {
     var query = "?country=" + country + "&category=" + category;
     var key = "&apiKey=5ff4a72e528b4f319854a4f14a2b0c9c";
     var url = endpoint + query + key;
-    // console.log(url);
     api_request.open("GET", url, true);
     api_request.send();
 }
@@ -41,7 +40,6 @@ function display_articles(data) {
     var noDescription = "";
     var image = "";
 
-    //console.log(data);
     for (var i = 0; i < data.articles.length; i++) {
         html += "<article class=\"content-wide\">";
         html += "<a target=\"_blank\" href='" + data.articles[i].url + "' >";

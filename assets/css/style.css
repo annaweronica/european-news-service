@@ -10,8 +10,8 @@ html, body {
 
 body{
     /* position: relative; */
-    font-family: "Montserrat", sans-serif;
-    font-size: 1rem;
+    font-family: 'Playfair Display', serif;
+    font-size: 0.9rem;
     color: 	#303030;
     overflow-x: hidden; 
     display: flex;
@@ -37,9 +37,9 @@ body{
 }
 
 .sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
 .news-head-title{
@@ -56,10 +56,6 @@ body{
 #images_countries_container img:hover, img:active, img:visited{
     opacity: 0.2;
 }  
-
-/*#images_countries_container img:visited{
-    opacity: 0.2;
-}*/ 
 
 .flag{
     height: 35px;
@@ -113,10 +109,6 @@ a h1:hover{
     color: grey;
 }
 
-#description{
-    font-size: 1rem;
-}
-
 /* ---------------------------------------------GO UP BUTTON */
 
 #myBtn {
@@ -165,8 +157,7 @@ a h1:hover{
     }
 
     #myBtn {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     bottom: 1rem;
     }
-
 }
