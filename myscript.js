@@ -66,21 +66,6 @@ function display_articles(data) {
     main_content.innerHTML = html;
 }
 
-const onClickHandler = (() => {
-    const head = document.getElementsByTagName('head').item(0);
-    let script;
-    let widgetEl = document.getElementById('customize-script-container');
-    return (e) => {
-        widgetEl.innerHTML = '';
-        if (script) {
-            head.removeChild(script);
-        }
-        script = document.createElement('script');
-        script.setAttribute('src', `https://darksky.net/widget/default-small/${e.target.dataset.coord}/ca12/en.js?width=100%&height=70&title=Full Forecast&textColor=333333&bgColor=FFFFFF&transparency=true&skyColor=undefined&fontFamily=Default&customFont=&units=ca'`);
-        head.appendChild(script);
-    };
-})();
-
 function latestNews(target, value) {
     set_value("category", "");
     set_value(target, value);
@@ -111,7 +96,7 @@ function scrollFunction() {
         document.getElementById("header").style.fontSize = "30px";
         document.getElementById("customize-script-container").style.display = "none";
     } else {
-        document.getElementById("header").style.fontSize = "30px";
+        document.getElementById("header").style.fontSize = "90px";
         document.getElementById("customize-script-container").style.display = "block";
     }
 }

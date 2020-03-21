@@ -7,7 +7,7 @@
 
 ---
 
-#UX
+<h1>UX</h1>
 
 **Aim:** <br>
 To get updated with the lastest news from choosen countries and within six categories.
@@ -65,8 +65,18 @@ USER STORIES
 - As a user I want to move from one category to the same category in different country.
 - As a user 
 
+<h1>Features</h1>
 
-#Technologies
+**Existing features:**
+- Select *Country*
+- Select *Category*
+
+**Future features to implement**
+- Search news input
+- Languages translation
+- Weather for the country on *Country* click
+
+<h1>Technologies</h1>
 
 HTML/HTML5<br>
 CSS/CSS3<br>
@@ -101,27 +111,29 @@ External code sources implemented and modified:
 - [scroll top](https://www.w3schools.com/howto/howto_js_scroll_to_top.asp)
 - [stickey footer](https://startbootstrap.com/snippets/sticky-footer-flexbox/)
 
+<h1>Deployment</h1>
 
-##Testing
+
+<h1>Testing</h1>
 
 **HTML Validator**
-- No errors or warnings to show.
-    > Please note: there is a workaround to avoid a warning regarding HTML code: 
-    > <article class="col-lg-4 wide-column col content-wide">
-	>					<h1>News</h1>
-	>					<div id="main-content">
-	>					</div>
-	>				</article>
-    > To avoid the warning not empty heading to the article had to be added. It is not visible on the webpage dur to top margin of the main content.
+- No errors or warnings to show. However:
+    > Please note: there is a workaround to avoid a warning regarding HTML code: <br>
+    > `<article class="col-lg-4 wide-column col content-wide">`<br>
+	>					`<h1>News</h1>`<br>
+	>					`<div id="main-content">`<br>
+	>					`</div>`<br>
+	>				`</article>`<br>
+    > To avoid the warning *empty heading* in the `<article>` had to be added. It is not visible on the webpage due to top margin on the main content.
 
 CSS Validator
 - No Error Found.
 
 JS Hint:
-- 
+- Statistics
 
 
-Manual Testing
+<h2>Manual Testing</h2>
 
 Webpage and its responsiveness was tested on follwoing browsers:
 Chrom
@@ -133,47 +145,51 @@ Internet Explorer
 TESTING THE FEATURES
 
 
-#Deployment
-The webpage is hosted on github with one master branch: github.com
+<h1>Deployment</h1>
+The webpage is hosted on github with one master branch: [https://github.com/annaweronica/european-news-service](https://github.com/annaweronica/european-news-service)
 
-git add .
-git commit -m "name"
-git push
-All commends were made as the work incrementation was made progressively and prevented from any code incrementation loss.
+Commends below were made as the work incrementation was made progressively and prevented from any code incrementation loss.
 
-GitHub Pages
+- git add .
+- git commit -m "name"
+- git push
 
-To deploy a website on GitHub Pages, follow these steps:
+<h2>GitHub Pages</h2>
 
-Go to Anna's repository
-Click on Settings
-Scrolling down you will find GitHub Pages
-Click on the Source dropdown menu
-Select master branch
-Should appear a green message saying Your site is published at
-To create a local development repository, follow these steps:
+**To deploy a website on GitHub Pages, follow these steps:**
 
-Go to Anna's repository
-Click on the Clone or download
-Click the check list icon on the right of the newly opened window to clone the repository using HTTPS
-Open Terminal
-Change the current working directory to the location where you want the cloned directory to be made
-Type git clone and paste the URL you copied in step 3 and run the command
-Credits
+1. Go to [GitHub repository](https://github.com/annaweronica/european-news-service)
+2. Click on Settings
+3. Scrolling down you will find GitHub Pages
+4. Click on the Source dropdown menu
+5. Select master branch
+6. Should appear a green message saying *Your site is published at* [https://annaweronica.github.io/european-news-service/](https://annaweronica.github.io/european-news-service/)
+
+**To create a local development repository, follow these steps:**
+
+1. Go to [GitHub repository](https://github.com/annaweronica/european-news-service)
+2. Click on the Clone or download
+3. Click the check list icon on the right of the newly opened window to clone the repository using HTTPS
+4. Open Terminal
+5. Change the current working directory to the location where you want the cloned directory to be made
+6. Type git clone and paste the URL you copied in step 3 and run the command
+
+
+<h1>Credits</h1>
 Anna have joined Code Institue to leran as much as she can from she believes best teachers, tutors and mentors and that will give Anna the opportuinity to join IT work environment after the graduation of CI programme.
 
-#Content
+<h2>Content</h2>
+[News API](https://newsapi.org/)
+
+[Ico]
 
 
 
-- Icons made by <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
-- Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
-- Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
-- Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
 - Icons made by <a href="https://www.flaticon.com/authors/roundicons" title="Roundicons">Roundicons</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
 - Icons made by <a href="https://www.flaticon.com/authors/roundicons" title="Roundicons">Roundicons</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
 - Icons made by <a href="https://www.flaticon.com/authors/roundicons" title="Roundicons">Roundicons</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
-- <div>Icons made by <a href="https://www.flaticon.com/authors/roundicons" title="Roundicons">Roundicons</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+- Icons made by <a href="https://www.flaticon.com/authors/roundicons" title="Roundicons">Roundicons</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
+Icons made by <a href="https://www.flaticon.com/authors/roundicons" title="Roundicons">Roundicons</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
 ---
 
 Enjoy!
