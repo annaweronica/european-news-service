@@ -7,29 +7,30 @@
 
 ---
 
-Aim: To get updated with the lastest news from choosen countries and within six categories.
-
 #UX
 
-Target audience:<br>
+**Aim:** <br>
+To get updated with the lastest news from choosen countries and within six categories.
 
-The user who is interested in latest news from *Country* within *Category*.
+**Target audience:**<br>
+The user who is interested in latest news from *Country* within *Category*.<br>
 The *Country* user can choose among:
-    - Sweden as default country, 
-    - Poland, 
-    - United Kingdom (named England here)
-    - Ireland
-    - France.
-The list of the countries is a subject to be extented. 
+- Sweden as default country, 
+- Poland, 
+- United Kingdom (named England here)
+- Ireland
+- France
+
+The list of the countries is a subject to be extented. <br>
 
 There are six categories for each *Country* to choose from: 
-    - Business
-    - Entertainment
-    - Health
-    - Science
-    - Sports
-    - Technology
-    - Latest news which is the section for all news from certain country.
+- Business
+- Entertainment
+- Health
+- Science
+- Sports
+- Technology
+- Latest news which is the section for all news from certain country.
 
 **The user path:** <br>
 The default settings while opening the webpage is:
@@ -40,23 +41,20 @@ By default clicling on any *Country* only (without selecting *Category*) it will
 
 The user must scroll down to read the news.<br>
 
-The user can be back to the top either:
+The user can be back to the top of the webpage either:
 - by clicking on any *Country*
 - by clicking on any *Category*
-- by clicking on a *Go to the top* button on the right bottom of the webpage
+- by clicking on a *Go up* button on the right bottom of the webpage
 
 **Optional paths:** <br>
 
 The user can click on:
 
 - *Country* to see *Latest news* from for example *Poland* and/or choose *Category* for example *Science*<br>
-- Then staying in the *Catogory* *Science* the user can change the *Country* for Sweden and he will stay within the same *Category* just different *Country*
-
-While the user click on the category for example *Health* and change the country then the section *Helth* from the other country will display. The page each time the user click on country and/or category goes to the top.
-The second option for going to the top is the "Go up" button on the right bottom of the webpage.
+- Then staying within the *Catogory* *Science* the user can change the *Country* for Sweden and he will stay within the same *Category* (just different *Country*)
+- To be back to the *Lastest News* for *Country* the user can click on *Lastest News* section
 
 Wireframes:
-
 
 
 USER STORIES
@@ -70,41 +68,43 @@ USER STORIES
 
 #Technologies
 
-HTML/HTML5
-CSS/CSS3
-JavaScript
+HTML/HTML5<br>
+CSS/CSS3<br>
+JavaScript<br>
 
-Framework:
-Bootstrap
+**Frameworks:**<br>
+Bootstrap<br>
+jQuery<br>
 
-External sources imported to the project:
+**External sources imported to the project:**
 
-BootstrapCDN
-popper.js
-Google fonts
-Font awesome
+BootstrapCDN<br>
+popper.js<br>
+Google fonts<br>
+Font awesome<br>
 
-Online IDE:
+**Online IDE:**<br>
 GitPod
 
-Hosting service:
+**Hosting service:**<br>
 GitHub
 
-Knowledgeable resources which supported Anna during her work:
+**Knowledgeable resources which supported me during my work:**
 
-- www3school
-- stackoverflow
-- Code Institute lerning materials
+- [w3school](https://www.w3schools.com/js/default.asp)
+- [stackoverflow](https://stackoverflow.com/)
+- [Code Institute lerning materials](https://courses.codeinstitute.net/program/FullstackWebDeveloper)
 
 
 External code sources implemented and modified:
-- https://www.w3schools.com/howto/howto_js_sticky_header.asp
-- https://www.w3schools.com/howto/howto_js_scroll_to_top.asp
-- https://startbootstrap.com/snippets/sticky-footer-flexbox/
-- https://www.freeiconspng.com/img/2392
+- [stickey header](https://www.w3schools.com/howto/howto_js_sticky_header.asp)
+- [scroll top](https://www.w3schools.com/howto/howto_js_scroll_to_top.asp)
+- [stickey footer](https://startbootstrap.com/snippets/sticky-footer-flexbox/)
 
-#Testing
-HTML Validator
+
+##Testing
+
+**HTML Validator**
 - No errors or warnings to show.
     > Please note: there is a workaround to avoid a warning regarding HTML code: 
     > <article class="col-lg-4 wide-column col content-wide">

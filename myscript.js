@@ -66,7 +66,6 @@ function display_articles(data) {
     main_content.innerHTML = html;
 }
 
-
 const onClickHandler = (() => {
     const head = document.getElementsByTagName('head').item(0);
     let script;
@@ -78,17 +77,15 @@ const onClickHandler = (() => {
         }
         script = document.createElement('script');
         script.setAttribute('src', `https://darksky.net/widget/default-small/${e.target.dataset.coord}/ca12/en.js?width=100%&height=70&title=Full Forecast&textColor=333333&bgColor=FFFFFF&transparency=true&skyColor=undefined&fontFamily=Default&customFont=&units=ca'`);
-        head.appendChild(script)
-    }
+        head.appendChild(script);
+    };
 })();
-
 
 function latestNews(target, value) {
     set_value("category", "");
     set_value(target, value);
     api_call();
     topFunction();
-
 }
 
 //Main function triggered by buttons 
@@ -96,9 +93,6 @@ function news_query(target, value) {
     set_value(target, value);
     api_call();
     topFunction();
-
-    // console.log(data);
-    //display_articles();
 }
 
 //JUMP TO THE TOP BUTTON & SHRINKING HEADER
@@ -115,10 +109,10 @@ function scrollFunction() {
     }
     if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
         document.getElementById("header").style.fontSize = "30px";
-        document.getElementById("customize-script-container").style.display = "block";
-    } else {
-        document.getElementById("header").style.fontSize = "90px";
         document.getElementById("customize-script-container").style.display = "none";
+    } else {
+        document.getElementById("header").style.fontSize = "30px";
+        document.getElementById("customize-script-container").style.display = "block";
     }
 }
 // When the user clicks on the button, scroll to the top of the document

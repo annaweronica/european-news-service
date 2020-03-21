@@ -3,7 +3,6 @@
 /*div{
     border: 1px solid black;
 }*/
-
 html, body {
     height: 100%;
     scroll-behavior: smooth;
@@ -30,11 +29,16 @@ body{
     top: 0;
     z-index: 10;
     font-size: 90px;
-    padding: 20px 10px; /* Some padding */
-    text-align: center; /* Centered text */
-    position: fixed; /* Fixed position - sit on top of the page */
-    width: 100%; /* Full width */
-    transition: 0.2s; /* Add a transition effect (when scrolling - and font size is decreased) */
+    padding: 20px 10px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    transition: 0.2s;
+}
+
+#customize-script-container{
+    margin-bottom: 0;
+    padding-bottom: 0;
 }
 
 .sticky {
@@ -55,8 +59,12 @@ body{
 }
 
 #images_countries_container img:hover{
-     opacity: 0.2;
+    opacity: 0.2;
 }  
+
+#images_countries_container img:visited{
+    opacity: 0.2;
+} 
 
 .flag{
     height: 35px;
@@ -72,11 +80,6 @@ body{
 #buttons_countries_categories button:hover{
     color: grey;
 }
-
-/*#customize-script-container{
-    height: 30px;
-    width: 30px;
-}*/
 
 /*--------------------------------------------------------------CONTENT SECTION*/
 
@@ -94,10 +97,6 @@ a img{
 a img:hover{
     opacity: 0.7;
 }
-
-/*.content-wide{
-    background-color: #F2EAD0;
-}*/
 
 #main-content{
     margin-top: 13rem;
@@ -140,8 +139,11 @@ a h1:hover{
     color: grey;
 }
 
-/* ---------------------------------------------MEDIA QUERY */
+#myBtn:active {
+    color: darkgrey;
+}
 
+/* ---------------------------------------------MEDIA QUERY */
 
 @media only screen and (max-width: 414px) {
   #header{
