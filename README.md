@@ -32,6 +32,15 @@ There are six categories for each *Country* to choose from:
 - Sports
 - Technology
 
+**Layout:**<br>
+Simple, clean and easy to read and navigate.<br>
+
+**Styling:**
+- Font: Abril+Fatface|PT+Serif reffering to old-fashion yellow pages newspapers.
+- Color: 
+    - for header soft-coffe color to not distructed the user from the main purpose.
+    - for main content white to make the news clean and easy to read.
+
 **The structure of the news**
 
 - The title of the news
@@ -40,7 +49,7 @@ There are six categories for each *Country* to choose from:
 
 ![Structure of the news](/assets/images/news-structure.png)
 
-The original news source opens a new tab of the browser.
+The original news source opens in a new tab of the browser.
 
 **The user path:** <br>
 The default settings while opening the webpage:
@@ -77,9 +86,8 @@ The user can be back to the top of the webpage either:
 staying within the *Catogory* *Science* the user can change the *Country* for Sweden and he will stay within the same *Category* (just different *Country*)
 - To be back to the *Lastest News* for *Country* the user can click on *Lastest News* section
 
-Wireframes:
-- ![Browser, iPod, iPhone view](/assets/wireframes/all-view.png)
-
+Wireframe for browser, iPod and iPhone view:<br>
+![Browser, iPod, iPhone view](/assets/wireframes/all-view.png)
 
 USER STORIES
 - As a user I want to see news from the default country as I open the webpage.
@@ -87,22 +95,30 @@ USER STORIES
 - As a user I want to get news by default from all categories for choosen country.
 - As a user I want to be able to choose the news category for choosen country.
 - As a user I want to move from the category to the same category but changing the country.
-- As a user I want to be back from choosen category to all latest news by clicking on *Lastest news*
-
+- As a user I want to be back from choosen category to all latest news by clicking on *Lastest news*.
+- As a user I want to have the header minimalized while scrolling down.
+- As a user I want to see on which element I hover the mouse.
+- As a user I want to see a no-image if there is not image available.
+- As a user I want to see a broken image icon if the image is availe but no displayed.
 
 <h1>Features</h1>
 
 **Existing features:**
+- Shrinking header
 - Select *Country*
 - Select *Category*
 - Going back to the top webpage
+- Hover on the clickable elements of the webpage.
+- Swedish flag as an icon in the browser tab title
 
 **Future features to implement**
 - Search news input
 - Language translations
 - Weather-widget for the country on *Country* click
-
->The developer made an attempt to implement the waether widget 
+>   - The developer made an attempt to implement the weather widget and succeced.
+>   - It has been removed due to crashing the webapage. It was not optimal.
+>   - The widget was taken from [darksky.net](https://darksky.net/widgets/small)<br>
+>   ![widget](/assets/images/widget.png)
 
 <h1>Technologies</h1>
 
@@ -157,16 +173,15 @@ GitHub
 **JS Hint**<br>
 - Metrics:
 
->There are 9 functions in this file.<br>
->Function with the largest signature take 2 arguments, while the median is 0.<br>
->Largest function has 21 statements in it, while the median is 4.<br>
->The most complex function has a cyclomatic complexity value of 5 while the median is 1.
+There are 9 functions in this file.<br>
+Function with the largest signature take 2 arguments, while the median is 0.<br>
+Largest function has 21 statements in it, while the median is 4.<br>
+The most complex function has a cyclomatic complexity value of 5 while the median is 1.<br>
 
->Two unused variables:
->	- latestNews
->	- news_query<br>
-
->There are called in HTML.
+Two unused variables:
+	- latestNews
+	- news_query<br>
+There are called in HTML.<br>
 
 <h2>Manual Testing</h2>
 
@@ -182,6 +197,31 @@ Webpage and its responsiveness was tested on follwoing browsers:
 1. Selecting the *Country* 
 2. Selecting the *Category*
 3. Clicking on the *Go up* button
+4. Shrinking header
+5. Hover on the clickable elements of the webpage.
+6. Swedish flag as an icon in the browser tab title
+
+**All the features were tested on all size devices and bugs weere detected**
+
+<h2>TESTING USER STORIES</H2>
+
+1. As a user I want to see news from the default country as I open the webpage.
+2. As a user I want to be able to choose from which country I want to read the news from.
+3. As a user I want to get news by default from all categories for choosen country.
+4. As a user I want to be able to choose the news category for choosen country.
+5. As a user I want to move from the category to the same category but changing the country.
+6. As a user I want to be back from choosen category to all latest news by clicking on *Lastest news*.
+7. As a user I want to have the header minimalized while scrolling down.
+8. As a user I want to see on which clickable elements I hover the mouse.
+9. As a user I want to see a no-image if there is not image available.
+
+    ![no-image available](/assets/images/no-image-available.png)
+
+10. As a user I want to see a broken image icon if the image is availe but no displayed.
+
+    ![available image but not displayed](/assets/images/image-not-displayed.png)
+
+**All User Stories were tested on all size devices and bugs were not detected.**
 
 <h1>Deployment</h1>
 The webpage is hosted on github with one master branch: [https://github.com/annaweronica/european-news-service](https://github.com/annaweronica/european-news-service)
@@ -214,8 +254,8 @@ Commends below were made as the work incrementation was made progressively and p
 
 
 <h1>Credits</h1>
-Anna have joined Code Institue to leran as much as she can from the best teachers, tutors and mentors so she believs she will have the opportuinity to find the job as Developer after graduation of CI programme. <br>
-
+Anna have joined Code Institue to leran as much as she can from the best teachers, tutors and mentors so she believs she will have the opportuinity to find the job as Developer after graduation of CI programme.
+<br>
 **Inspiration**<br>
 [tvn24](https://tvn24.pl/)
 
