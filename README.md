@@ -217,7 +217,7 @@ Webpage and its responsiveness was tested on follwoing browsers:
 
     ![no-image available](/assets/images/no-image-available.png)
 
-10. As a user I want to see a broken image icon if the image is availe but no displayed.
+10. As a user I want to see a broken image icon if the image is available but no displayed.
 
     ![available image but not displayed](/assets/images/image-not-displayed.png)
 
