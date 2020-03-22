@@ -14,31 +14,33 @@ To get updated with the lastest news from choosen countries and within six categ
 
 **Target audience:**<br>
 The user who is interested in latest news from *Country* within *Category*.<br>
-The *Country* user can choose among:
+The user can choose the *Country* among:
 - Sweden as default country, 
 - Poland, 
-- United Kingdom (named England here)
+- United Kingdom
 - Ireland
 - France
 
-The list of the countries is a subject to be extented. <br>
+>The list of the countries is a subject to be extented. <br>
 
 There are six categories for each *Country* to choose from: 
+- Latest news (all categories together)
 - Business
 - Entertainment
 - Health
 - Science
 - Sports
 - Technology
-- Latest news which is the section for all news from certain country.
 
 **The structure of the news**
 
 - The title of the news
-- The image/no image/ broken image 
-- Description/ no description / lack of description
+- The image
+- Description
 
-The original news source opens in the new tab browser
+![Structure of the news](/assets/images/News-structure.png)
+
+The original news source opens in the browser new tab 
 
 **The user path:** <br>
 The default settings while opening the webpage:
@@ -61,12 +63,18 @@ The user can be back to the top of the webpage either:
 
 **Optional paths:** <br>
 
--> *Country* -> *Category
+- *Country: Sweden* -> *Category: Health* -> *Category: Science* -> <br>
+- *Country: France* -> *Category: Science* -> <br>
+- *Country: Poland* -> *Category: Science* -> *Category: Health* -> <br>
+- *Country: Ireland* -> *Category: Health* -> *Category: Latest News*<br>
 
-The user can click on:
+>Following the logic:
 
-- *Country* to see *Latest news* from for example *Poland* and/or choose *Category* for example *Science*<br>
-- Then staying within the *Catogory* *Science* the user can change the *Country* for Sweden and he will stay within the same *Category* (just different *Country*)
+>- The user can click on the *Country* to see *Latest news* from *Sweden* and choose *Category* *Health* and then change the *Category* for *Science* <br>
+>- Then the user can change the *Country* for *France* but he will automatically stay in the last *Category* which is *Science*
+>- If he changes the *Country* for *Poland* he will still automatically stay within the same last choosen *Category* which is *Science* 
+
+staying within the *Catogory* *Science* the user can change the *Country* for Sweden and he will stay within the same *Category* (just different *Country*)
 - To be back to the *Lastest News* for *Country* the user can click on *Lastest News* section
 
 Wireframes:
@@ -121,7 +129,7 @@ GitHub
 - [Code Institute lerning materials](https://courses.codeinstitute.net/program/FullstackWebDeveloper)
 
 
-External code sources implemented and modified:
+**External code sources implemented and modified:**
 - [stickey header](https://www.w3schools.com/howto/howto_js_sticky_header.asp)
 - [scroll top](https://www.w3schools.com/howto/howto_js_scroll_to_top.asp)
 - [stickey footer](https://startbootstrap.com/snippets/sticky-footer-flexbox/)
@@ -130,13 +138,14 @@ External code sources implemented and modified:
 
 **HTML Validator**
 - No errors or warnings to show. However:
-    > Please note: there is a workaround to avoid a warning: <br>
+    > Please note: there is a workaround to avoid a warning *article without the heading*: <br>
     > `<article class="col-lg-4 wide-column col content-wide">`<br>
 	>					`<h1>News</h1>`<br>
 	>					`<div id="main-content">`<br>
 	>					`</div>`<br>
 	>				`</article>`<br>
-    > To avoid the warning *empty heading* in the `<article>` had to be added. It is not visible on the webpage due to top margin on the main content.
+    > To avoid another warning: *empty heading* in the `<h1>` in the `<article>` had to be added.<br>
+    > `<h1>News</h1>` is not visible on the webpage due to top margin on the main content.
 
 CSS Validator
 - No Error Found.
@@ -151,18 +160,17 @@ JS Hint:
 
 >Two unused variables:
 >	- latestNews
->	- news_query
+>	- news_query<br>
+
 >There are called in HTML.
 
 <h2>Manual Testing</h2>
 
 Webpage and its responsiveness was tested on follwoing browsers:
-- Chrom
-- FireFox
-- Edge
-- Internet Explorer
 
->![INTERNET EXPLORER IS NOT SUPPORTED] 
+| Chrom     | FireFox   | Edge      | Internet Explorer |
+| --------- | ----------| --------- | ------------------|
+| supported | supported | supported | not supported     |
 
 
 <h2>TESTING THE FEATURES</h2>
@@ -205,24 +213,18 @@ Commends below were made as the work incrementation was made progressively and p
 Anna have joined Code Institue to leran as much as she can from the best teachers, tutors and mentors so she believs she will have the opportuinity to find the job as Developer after graduation of CI programme.<br>
 
 
-
-**Inspiration**
+**Inspiration**<br>
+[tvn24](https://tvn24.pl/)
 
 <h2>Content</h2>
 [News API](https://newsapi.org/)
 
-[Flags icons](https://www.flaticon.com/)
-
-> Icons made by <a href="https://www.flaticon.com/authors/roundicons" title="Roundicons">Roundicons</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
-> Icons made by <a href="https://www.flaticon.com/authors/roundicons" title="Roundicons">Roundicons</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
-> Icons made by <a href="https://www.flaticon.com/authors/roundicons" title="Roundicons">Roundicons</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
-> Icons made by <a href="https://www.flaticon.com/authors/roundicons" title="Roundicons">Roundicons</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
-> Icons made by <a href="https://www.flaticon.com/authors/roundicons" title="Roundicons">Roundicons</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
+All flag icons made by <a href="https://www.flaticon.com/authors/roundicons" title="Roundicons">Roundicons</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a><br>
 
 [No photo image](https://www.freeiconspng.com/downloadimg/23483)
 
-**Thank you**
-@Xav and @Kevin for support during the project<br>
+**Thank you**<br>
+@Xav @Kevin for support during the project<br>
 @Anna Greaves for inspiration on readme.md 
 
 ---
