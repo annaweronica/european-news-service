@@ -36,7 +36,7 @@ There are six categories for each *Country* to choose from:
 Simple, clean and easy to read and navigate.<br>
 
 **Styling:**
-- Font: Abril+Fatface|PT+Serif reffering to old-fashion yellow pages newspapers.
+- Font: Abril+Fatface and PT+Serif referring to old-fashion yellow pages newspapers.
 - Color: 
     - for header soft-coffe color to not distructed the user from the main purpose.
     - for main content white to make the news clean and easy to read.
@@ -256,6 +256,7 @@ Commends below were made as the work incrementation was made progressively and p
 <h1>Credits</h1>
 Anna have joined Code Institue to leran as much as she can from the best teachers, tutors and mentors so she believs she will have the opportuinity to find the job as Developer after graduation of CI programme.
 <br>
+
 **Inspiration**<br>
 [tvn24](https://tvn24.pl/)
 
