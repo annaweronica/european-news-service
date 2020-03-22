@@ -38,14 +38,14 @@ There are six categories for each *Country* to choose from:
 - The image
 - Description
 
-![Structure of the news](/assets/images/News-structure.png)
+![Structure of the news](/assets/images/news-structure.png)
 
-The original news source opens in the browser new tab 
+The original news source opens a new tab of the browser.
 
 **The user path:** <br>
 The default settings while opening the webpage:
 - *Country*: *Sweden*
-- *Category*: *Latest news* (all categories for *Country*) dispalyed.<br>
+- *Category*: *Latest news* (all categories for *Country*) <br>
 
 >*Latest news* section contains all news from different categories together.<br>
 >By default clicling on any *Country* only (without selecting *Category*) it will open the *Latest news* section.<br>
@@ -78,6 +78,7 @@ staying within the *Catogory* *Science* the user can change the *Country* for Sw
 - To be back to the *Lastest News* for *Country* the user can click on *Lastest News* section
 
 Wireframes:
+- ![Browser, iPod, iPhone view](/assets/wireframes/all-view.png)
 
 
 USER STORIES
@@ -85,19 +86,23 @@ USER STORIES
 - As a user I want to be able to choose from which country I want to read the news from.
 - As a user I want to get news by default from all categories for choosen country.
 - As a user I want to be able to choose the news category for choosen country.
-- As a user I want to move from one category to the same category in different country.
-- As a user 
+- As a user I want to move from the category to the same category but changing the country.
+- As a user I want to be back from choosen category to all latest news by clicking on *Lastest news*
+
 
 <h1>Features</h1>
 
 **Existing features:**
 - Select *Country*
 - Select *Category*
+- Going back to the top webpage
 
 **Future features to implement**
 - Search news input
-- Languages translation
-- Weather for the country on *Country* click
+- Language translations
+- Weather-widget for the country on *Country* click
+
+>The developer made an attempt to implement the waether widget 
 
 <h1>Technologies</h1>
 
@@ -107,7 +112,6 @@ JavaScript<br>
 
 **Frameworks:**<br>
 Bootstrap<br>
-jQuery<br>
 
 **External sources imported to the project:**
 
@@ -147,10 +151,10 @@ GitHub
     > To avoid another warning: *empty heading* in the `<h1>` in the `<article>` had to be added.<br>
     > `<h1>News</h1>` is not visible on the webpage due to top margin on the main content.
 
-CSS Validator
+**CSS Validator**
 - No Error Found.
 
-JS Hint:
+**JS Hint**<br>
 - Metrics:
 
 >There are 9 functions in this file.<br>
@@ -210,24 +214,22 @@ Commends below were made as the work incrementation was made progressively and p
 
 
 <h1>Credits</h1>
-Anna have joined Code Institue to leran as much as she can from the best teachers, tutors and mentors so she believs she will have the opportuinity to find the job as Developer after graduation of CI programme.<br>
-
+Anna have joined Code Institue to leran as much as she can from the best teachers, tutors and mentors so she believs she will have the opportuinity to find the job as Developer after graduation of CI programme. <br>
 
 **Inspiration**<br>
 [tvn24](https://tvn24.pl/)
 
 <h2>Content</h2>
-[News API](https://newsapi.org/)
 
+[API](https://newsapi.org/)<br>
 All flag icons made by <a href="https://www.flaticon.com/authors/roundicons" title="Roundicons">Roundicons</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a><br>
-
-[No photo image](https://www.freeiconspng.com/downloadimg/23483)
+[No photo image](https://www.freeiconspng.com/downloadimg/23483)<br>
+The wireframe was made on the [balsamiq cloud](https://balsamiq.cloud/sxgoi9m/projects)
 
 **Thank you**<br>
 @Xav @Kevin for support during the project<br>
-@Anna Greaves for inspiration on readme.md 
+@Anna for inspiration on readme.md 
 
 ---
 
 Enjoy!
-
